@@ -1,4 +1,4 @@
-# ![image](https://github.com/user-attachments/assets/80f773a7-ce25-4a7c-bcbd-e29e24ab72e0)
+# ![image](https://github.com/user-attachments/assets/0ed8e467-f6ba-4d66-9994-1315245e1474)
 
 👋 Merhabalar, oluşturmuş olduğum bu repo, Youtube'da Murat Yücedağ tarafından verilen 50 Derste MVC adlı eğitimde yapmış olduğum projeyi içermektedir.<br><br>
 
