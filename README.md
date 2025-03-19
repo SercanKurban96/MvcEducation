@@ -69,23 +69,23 @@ public class Kullanıcı<br>
 
 # 🖥️ MVC Ders 2 - View ve Layout Kavramları
 
-![Ekran görüntüsü 2025-03-17 220637](https://github.com/user-attachments/assets/84ddec71-50ff-486a-8d9e-79f0f28f02e5)
+![image](https://github.com/user-attachments/assets/08383b2e-6ddd-4ec4-b2fa-2b7c75de313a)
 <br>
 Visual Studio'dan yeni bir proje oluşturduktan sonra seçeceğimiz şablon <b>ASP.NET Web Application (.NET Framework)</b> olacaktır.<br><br>
 
-![Ekran görüntüsü 2025-03-17 220710](https://github.com/user-attachments/assets/75b979b6-db41-4153-936e-5b7f78386b69)
+![image](https://github.com/user-attachments/assets/18109c95-945f-4d3b-b66a-425f2d963998)
 <br>
 Şablonumuzu seçtikten sonra karşımıza bu şekilde çıkacaktır. Projemizin ismini MvcProject olarak belirliyoruz.<br><br>
 
-![Ekran görüntüsü 2025-03-17 220736](https://github.com/user-attachments/assets/87d7e63f-3095-4d45-9081-4ad6597f68ee)
+![image](https://github.com/user-attachments/assets/3962574a-d9d0-43e1-9224-2f3ebabb65f3)
 <br>
 Ardından karşımıza bu şekilde çıkacaktır. Burada MVC projesi oluşturacağımız için MVC şablonu direkt seçili halde gelecektir. Create diyoruz.<br><br>
 
-![Ekran görüntüsü 2025-03-17 220813](https://github.com/user-attachments/assets/5565c1df-ead1-4f83-8527-150753ba8183)
+![image](https://github.com/user-attachments/assets/fa8b11c3-faac-440a-9a25-0523262f0547)
 <br>
 Projemiz bu şekilde oluşturuldu.<br><br>
 
-![image](https://github.com/user-attachments/assets/547d195c-1ebc-4245-9c08-16591ffec520)
+![image](https://github.com/user-attachments/assets/a04ef63d-b3c8-4a32-9998-41293b480af2)
 <br>
 MVC'de Views klasörüne geldiğimiz zaman karşımıza Home ve Shared isminde iki tane klasör bizi karşılamaktadır. ASP.NET MVC'de Views klasörü, uygulamanın kullanıcı arayüzünü oluşturan görünüm (View) dosyalarını içerir. Kullanıcıya sunulacak HTML içeriği burada bulunur.<br><br>
 
@@ -113,7 +113,7 @@ Views<br>
 ✅ Tüm Controller'lar tarafından ortak kullanılan View dosyaları burada yer alır.<br><br>
 ✅ Örnek:<br><br>
 
-![image](https://github.com/user-attachments/assets/ce4572ad-52cb-45d0-b894-29a21cd6993e)
+![image](https://github.com/user-attachments/assets/3277c84a-1fad-40e9-ba78-7d275159fe4c)
 <br>
 <b>_Layout.cshtml</b> → Tüm sayfalar için ortak bir şablon (Header, Footer gibi öğeler içerir).<br>
 <b>_ViewStart.cshtml</b> → Sayfa başlatma işlemleri için kullanılır.<br>
@@ -154,18 +154,19 @@ Views<br>
 📌 _ViewStart.cshtml, varsayılan ayarları belirler.<br>
 📌 _ViewImports.cshtml, global isim alanlarını ve Tag Helper'ları ekler.<br><br>
 
-![image](https://github.com/user-attachments/assets/e67a7e7e-bd3e-423f-8302-f0ca98b6c279)
+![image](https://github.com/user-attachments/assets/54c550c8-a2e1-4db2-a684-c8df9f985585)
 <br>
 Home klasöründe yer alan Index sayfasına gidelim ve sağ tıklayarak View in Browser diyelim.<br><br>
 
-![image](https://github.com/user-attachments/assets/6fad980d-e94b-42bd-a5fb-236b695cc175)
+![image](https://github.com/user-attachments/assets/d63ae386-9775-4972-b787-754022a68b95)
 <br>
 Sayfamızı çalıştırdığımız zaman karşımıza bu şekilde çıkacaktır.<br><br>
 
-![image](https://github.com/user-attachments/assets/b80a5434-c619-45a9-b069-a6a34930d827)
+![image](https://github.com/user-attachments/assets/afe6b259-21e1-4744-9c6e-b9c86c86a9d0)
+<br>
 Bu kez Shared klasöründe yer alan _Layout sayfasına gidip RenderBody'nin üstüne örnek olarak Merhaba yazalım, ancak çalıştırırken Layout üzerinden değil tekrardan Index üzerinden çalıştırıyoruz.<br><br>
 
-![image](https://github.com/user-attachments/assets/f0ccfc2d-75c9-4fe6-8d22-b7cb79b3f854)
+![image](https://github.com/user-attachments/assets/a220ffe8-3673-414d-aa51-ad716549a61f)
 <br>
 Merhaba yazısı bizi karşılamış oldu.<br><br>
 
