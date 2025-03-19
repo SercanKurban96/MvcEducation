@@ -174,11 +174,11 @@ Merhaba yazısı bizi karşılamış oldu.<br><br>
 
 # 🖥️ Mvc Ders 3 - Controller Yapısı ve Layout Düzenlemeleri
 
-![image](https://github.com/user-attachments/assets/ea195672-b677-4fc9-8379-b3d2c33a2ce7)
+![image](https://github.com/user-attachments/assets/ab9bf4d3-8790-4e22-aa64-eed2a433c748)
 <br>
 İlk olarak Index sayfasından çalıştırdığımız zaman üstte yer alan Home, About, Contact gibi alanlar yer almaktadır. Buradaki alanlara erişmek, düzenleme yapmak için Layout.cshtml sayfasından ayarlıyoruz.<br><br>
 
-![image](https://github.com/user-attachments/assets/8540ba54-257a-418f-904c-c1882b8886ad)
+![image](https://github.com/user-attachments/assets/3609e4f1-4dc0-4011-8a3a-8d5889bead13)
 <br>
 Layout.cshtml sayfasına geldiğimiz zaman bize burada Application name ile birlikte dört tane alan karşılayacaktır.<br>
 @Html.ActionLink dediğimiz şey, Web Form'daki LinkLabel gibi düşünebilirsiniz. Bir alana link verip oradan yönlendirme işlemi yapmak için kullanacağımız alanı temsil eder.<br>
@@ -189,60 +189,46 @@ Layout.cshtml sayfasına geldiğimiz zaman bize burada Application name ile birl
 
 Buradan Controller dosyasına gidelim.<br><br>
 
-![image](https://github.com/user-attachments/assets/abc2105a-f041-43fa-9dba-518538e226a7)
+![image](https://github.com/user-attachments/assets/bb7c1ee5-a9d3-42c9-ac6b-1b43b01e2db4)
 <br>
 Controllers klasörüne baktığımız zaman bize bir tane HomeController isminde hazır olarak verilmiştir. Buraya tıklayalım.<br><br>
 
-![image](https://github.com/user-attachments/assets/ad0e4e15-a6db-443b-8e41-fdcf5a7d3094)
+![image](https://github.com/user-attachments/assets/757890ca-dd8d-4e9f-9d21-af87bc23f1c1)
 <br>
 HomeController bu şekilde karşımıza çıkacaktır. Burada arka planda çalışan, işin Controller tarafında çalışan metotlarımızı tutan alandır. HomeController içerisinde Index, About ve Contact isminde üç tane ActionResult alanları bulunmaktadır.<br>
 Burada Layout.cshtml sayfasına gidip örnek bir menü ekleyelim.<br><br>
 
-![image](https://github.com/user-attachments/assets/10e3a7bd-24fb-4bd0-9b2b-c930ff3b5ab2)
+![image](https://github.com/user-attachments/assets/c979412c-84bd-4872-aa41-3905e1d33694)
 <br>
 Burada ilk parametrede yer alan 4 Nolu Sütun, sayfamızın görünen kısmı olacaktır. Buraya tıkladığımızda bizi About sayfasına yönlendirecektir.<br><br>
 
-![image](https://github.com/user-attachments/assets/264c91af-3114-4a86-8422-8fd07c602a54)
+![image](https://github.com/user-attachments/assets/d02c5fd7-1523-4f6b-8055-6f3f0b137dbe)
 <br>
 Oluşturduğumuz yeni sayfa burada görüntülenmiş oldu. Sayfamıza tıklayalım.<br><br>
 
-![image](https://github.com/user-attachments/assets/c5b0bb66-a8f1-4481-82ce-775d836afbb1)
+![image](https://github.com/user-attachments/assets/02e8bdd7-63c5-4631-99ba-3a2b3eea46cb)
 <br>
-
 Karşımıza bu şekilde bir mesaj çıkacaktır. Peki biz bu içeriği değiştirebilir miyiz ona bakalım.<br><br>
 
-![image](https://github.com/user-attachments/assets/d8b5b521-4ccf-4386-a215-be6c17bfc013)
+![image](https://github.com/user-attachments/assets/3df89f41-117a-4238-9ad0-e001b92a6360)
 <br>
-Views klasöründen Home klasörüne ait olan About.cshtml sayfasına gidelim.<br><br>
+Views klasöründen Home klasörüne ait olan About.cshtml sayfasına gittiğimiz zaman bu şekilde karşımıza çıkacaktır. Buradan istediğiniz yazıyı yazabilirsiniz.<br><br>
 
-![image](https://github.com/user-attachments/assets/9d0611b1-15ef-4d1b-a9db-8d9098988011)
+![image](https://github.com/user-attachments/assets/057a85f9-8be7-460a-b2cf-363b93c5745e)
 <br>
-About sayfası bu şekilde çıkacaktır. Buradan istediğiniz yazıyı yazabilirsiniz.<br><br>
+Burada birkaç metin değişikliği yaptık. Programımızı çalıştıralım.<br><br>
 
-![image](https://github.com/user-attachments/assets/095486c7-eef5-4b20-b9f7-d733e1abf8fe)
-<br>
-
-Örneğin burada bir yazı yazdık. Programımızı çalıştıralım.<br><br>
-
-![image](https://github.com/user-attachments/assets/a2ba0335-f0b1-4497-b3cc-74ffa61dd114)
+![image](https://github.com/user-attachments/assets/a8c6cc9e-a7d0-4f84-bbdd-0bda2ed36c0b)
 <br>
 Yazdığımız mesaj bu şekilde karşımıza çıktı. Yazdığımız mesajın yukarısında yer alan Your application description page mesajı HomeController'in About kısmında yer almaktadır.<br><br>
 
-![image](https://github.com/user-attachments/assets/335a274a-4ad5-4102-891a-43530f12cdae)
+![image](https://github.com/user-attachments/assets/4df9d471-4543-4334-9f32-a3400bae9334)
 <br>
 Buradaki yazıyı değiştirmiş olduk.<br><br>
 
-![image](https://github.com/user-attachments/assets/1c89bbd7-5d44-4e22-ab93-8aa24d6e10b3)
+![image](https://github.com/user-attachments/assets/5e6593ce-0626-4687-8384-b79dd3182006)
 <br>
-Sayfayı tekrardan çalıştırdığımızda yazdığımız mesaj burada görüntülenmiş oldu. Üstünde yer alan About yazısını değiştirelim.<br><br>
-
-![image](https://github.com/user-attachments/assets/bf57705d-596b-4bde-80a8-40028bb4840c)
-<br>
-En üstte yer alan ViewBag.Title kısmında About yerine Hakkında yazdık.<br><br>
-
-![image](https://github.com/user-attachments/assets/1fd58f24-d83f-446e-9fa5-fce3aa7dc0f5)
-<br>
-Sayfamız bu şekilde tamamlanmış oldu.<br><br>
+Sayfayı tekrardan çalıştırdığımızda yazdığımız mesaj burada görüntülenmiş oldu.<br><br>
 
 <hr>
 
