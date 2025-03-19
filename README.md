@@ -234,45 +234,45 @@ Sayfayı tekrardan çalıştırdığımızda yazdığımız mesaj burada görün
 
 # 🖥️ Mvc Ders 4 - Controller Yapısı ve Layout Düzenlemeleri
 
-![image](https://github.com/user-attachments/assets/9bd558af-727b-4e65-8c42-940e3e26911a)
+![image](https://github.com/user-attachments/assets/119fbbdd-445f-43ee-88b6-1640580d9668)
 <br>
 HomeController'da Index, About ve Contact isminde üç tane alanımız bulunmaktaydı. Burada yeni bir tane alan tanımlıyoruz ve ismini Bilgi olarak belirledik. Bunun sonucunda bize direkt View olarak döndürmesini sağlıyoruz.<br><br>
 
 ### ⚠️ <b>View oluşturmak için uygulanacak adımlar:</b>
 
-![image](https://github.com/user-attachments/assets/3d256ad5-4774-428e-8570-321b0f7fb326)
+![image](https://github.com/user-attachments/assets/8d006ac0-9c14-4a91-843b-8c1da426281a)
 <br>
 Oluşturduğumuz ActionResult'tan Bilgi ismini verdiğimiz alana sağ tıklayıp "Add View" diyoruz.<br><br>
 
-![image](https://github.com/user-attachments/assets/0ce96bd8-e209-47fe-9910-9f3c8f5e25c8)
+![image](https://github.com/user-attachments/assets/39be728e-293b-4897-8b7a-e2e9f134acd0)
 <br>
 Karşımıza bu şekilde çıkacaktır. Add diyoruz.<br><br>
 
-![image](https://github.com/user-attachments/assets/92f89ec3-f04a-45fa-b63e-f649982a349c)
+![image](https://github.com/user-attachments/assets/0dd1539e-5df0-4293-b923-16193d89a4c5)
 <br>
 View ekleme alanı bu şekilde karşımıza çıkacaktır. Burada Use Layout Page kısmı seçili olarak gelecektir. Oluşturacağımız View'a Layout eklemek için sağında bulunan ... işaretine tıklıyoruz.<br><br>
 
-![image](https://github.com/user-attachments/assets/37208896-12c2-4430-ab8e-36ccb8ccf0db)
+![image](https://github.com/user-attachments/assets/54a1e9e7-1947-4ed5-a669-fbf0506b6f3b)
 <br>
 Karşımıza bu şekilde çıkacaktır.<br><br>
 
-![image](https://github.com/user-attachments/assets/f5395041-a90c-499b-a64a-7f8897ff98bb)
+![image](https://github.com/user-attachments/assets/05e62f4c-6ecd-4e6c-b6c6-345306ab37c6)
 <br>
 Burada Layout seçebilmek için Views klasörüne geliyoruz ve hemen ardından Shared klasörüne tıklıyoruz. Shared klasörüne tıkladıktan sonra iki tane sayfa karşımıza çıkacaktır. Burada Layout ekleyeceğimiz için _Layout.cshtml sayfasını seçiyoruz ve OK diyoruz.<br><br>
 
-![image](https://github.com/user-attachments/assets/9c357169-1279-4d11-96b2-f29afe23823f)
+![image](https://github.com/user-attachments/assets/099bf4e2-3cd0-4b85-8021-c6d73a3ee806)
 <br>
 Layout sayfamız hazır. Add diyoruz ve biraz bekliyoruz.<br><br>
 
-![image](https://github.com/user-attachments/assets/72ca3988-be6a-48f6-b5e7-d6f4ac151a6e)
+![image](https://github.com/user-attachments/assets/7c230361-67ea-4b97-8b49-f7d986c5badc)
 <br>
 Bilgi sayfası bu şekilde gelmiş oldu.<br><br>
 
-![image](https://github.com/user-attachments/assets/8c2a7bce-9b7e-4658-89f9-b5e0ca47c791)
+![image](https://github.com/user-attachments/assets/f39b5fa5-9c8d-461b-89d4-b83b4d1300a8)
 <br>
 Layout.cshtml sayfasına gidip oluşturduğumuz Bilgi sayfasına ait yeni bir alan ekleyelim.<br><br>
 
-![image](https://github.com/user-attachments/assets/9f5ac4ac-9617-4bf9-a5aa-28dba5d5688f)
+![image](https://github.com/user-attachments/assets/4313ef50-a53c-4917-a6b2-866151a0ce9e)
 <br>
 Bilgi sekmesi karşımıza bu şekilde çıkmış oldu.<br><br>
 
