@@ -39,5 +39,13 @@ namespace MvcStok.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Sil(int id)
+        {
+            var urun = db.TBLURUNLER.Find(id);
+            db.TBLURUNLER.Remove(urun);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
