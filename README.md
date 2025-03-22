@@ -410,3 +410,370 @@ TBLURUNLER tablosunda küçük bir değişiklik yaptık. Burada MARKA ve STOK is
 
 # 🖥️ Mvc Ders 10 - Modelin Oluşturulması
 
+![image](https://github.com/user-attachments/assets/acfb4a67-3a1d-4683-bd98-e7fad48c7fa0)
+<br>
+Yeni bir proje oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/57b9aa86-020d-4b66-a7d7-c5b3b0d6afef)
+<br>
+Models klasörüne sağ tıklayıp Entity isminde yeni bir klasör oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d71cb1b2-a88b-478d-95de-d95841eed4f0)
+<br>
+Entity klasörüne sağ tıklayıp Add kısmından New Item diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d177ecea-aa5a-4f19-b0db-7aa946c9179f)
+<br>
+Sol tarafta yer alan Data seçeneğini seçip ADO.NET Entity Data Model diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/0c05543a-17f4-48f2-b7c5-7e1cb89dd874)
+<br>
+Next diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d5713e7e-6461-496c-9289-52cb0f6983b8)
+<br>
+Veri tabanımızı seçiyoruz ve OK diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/8dc6a3d5-6e3c-40f7-9c34-7c5a5b9bef0c)
+<br>
+Next diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/767134d1-c930-4dda-a277-80b9fce4a679)
+<br>
+Tablodaki bütün alanları seçtikten sonra Finish diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cd1e0e19-e38b-4ea7-97a6-54515fcda9af)
+<br>
+Modelimiz oluşturuldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 11 - Controller Ve Navbar
+
+Burada Bootstrap Navbar isminde arama yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/61838ba9-fd20-408d-892c-fc6fe705c0a8)
+<br>
+Burada istediğiniz Navbar kullanabilirsiniz. Burada Inverted Navbar olanı kullanacağız. Try it Yourself diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5e7208a9-b285-43cc-be6c-627977a0f695)
+<br>
+Buradaki alanların tümünü kopyalıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7c6e561b-db6b-41ad-8505-e0c90d001f81)
+<br>
+Shared klasörüne sağ tıklayıp Add kısmından View diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d9704d40-0210-413f-9496-8f597ece9fce)
+<br>
+İsmini _MainLayout olarak belirliyoruz ve herhangi bir Layout sayfası kullanmıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/90f77888-fb70-4a4f-9e60-a6a4d37a17d9)
+<br>
+Kopyaladığımız Navbar kodlarını oluşturduğumuz _MainLayout içerisine yapıştırıyoruz.<br><br>
+
+Controller işlemlerine geçiyoruz. Bunun için Controllers klasörüne gelip yeni bir Controller oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/3d31ca67-fea7-445c-8083-228e296329e4)
+<br>
+İsmini KategoriController olarak belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/8108c150-1e3f-429d-b154-c2dd0b791201)
+<br>
+KategoriController oluşturduktan sonra Index'e sağ tıklayıp yeni bir View oluşturuyoruz ve burada _MainLayout sayfasını kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/30864909-d001-465e-b7b1-790656cd7630)
+<br>
+Index oluşturuldu. Çalıştırmayı deneyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/4608d477-c31c-4f17-935a-42d26aa3ba1e)
+<br>
+Karşımıza böyle bir hata çıkmaktadır. Bunun sebebi RenderBody metodu herhangi bir yere çağırılmadı.<br><br>
+
+### 🧰 RenderBody Nedir?
+RenderBody, ASP.NET MVC ve ASP.NET Core MVC projelerinde Layout (Düzen) sayfası içerisinde kullanılan bir yöntemdir.<br>
+RenderBody(), Layout (Master) sayfasında belirlenen bir alana, her bir sayfanın (View'in) içeriğini yerleştirmek için kullanılan bir metottur.<br>
+Bir Layout sayfasında genellikle şunlar bulunur:<br><br>
+
+💠 Sabit içerikler (Header, Footer, Menü vb.)<br>
+💠 Dinamik olarak değişen içerik alanı (RenderBody() burada devreye girer.)<br><br>
+
+![image](https://github.com/user-attachments/assets/b1a10df3-5c9b-434e-930c-5ded2f8aedc6)
+<br>
+_MainLayout sayfasına gittiğimiz zaman container class'ta yer alan bazı metinler bulunmaktadır. Layout işlemlerini burada çağıracağımız için RenderBody() metodunu buraya ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/625d7636-75f1-4107-ae4e-92c96864bff3)
+<br>
+RenderBody metodunu buraya eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/9eea0a10-24fa-40ec-9dda-d19a8f4d1d88)
+<br>
+Tekrardan Index üzerinden çalıştırdığımız zaman karşımıza bu şekilde çıkmış oldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 12 - Menüyü Türkçeleştirme
+
+![image](https://github.com/user-attachments/assets/61053c10-df4e-46c3-ba13-27182a88271d)
+<br>
+
+![image](https://github.com/user-attachments/assets/2b4c8426-095e-41a6-a9e3-4be0c0aeb264)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 13 - Kategorileri Listeleme
+
+![image](https://github.com/user-attachments/assets/44efbcf5-8bd1-4942-a89a-c740aa035e2b)
+<br>
+İlk olarak using kütüphanesinde tanımladığımız modeli buraya ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/6cce3330-d428-4b75-9fb1-4013972ae55d)
+<br>
+Ardından oluşturduğumuz modeli buraya ekliyoruz ve ismini db olarak belirliyoruz. Listelemek için var türünden degerler isminde bir değişken oluşturup TBLKATEGORILER tablosundan ToList metoduyla listeleme işlemini yaptık. Ardından return View içerisine degerler değişkenini eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/0eb41cd8-ff0e-4c84-8303-12850d7f6ad6)
+<br>
+Index sayfasına gidiyoruz. Burada tanımlamamız gereken iki tane komut var. Bunlardan birincisi @using MvcStok.Models.Entity, ikincisi ise bizim bir modele ihtiyacımız olacaktır. Kullanacağımız komut ise @model List<TBLKATEGORILER> olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/45c418c3-6621-4e33-ad0d-57e2ce51dbe1)
+<br>
+Burada listeleme işleminde verilerimizin düzgün bir şekilde gözükmesi için bir tane tablo oluşturduk. Tablo oluşturmak için HTML etiketlerinden table olanı kullandık. Burada tablonun kenarlıklarını belirlemek için table table-bordered kullandık. Ardından satır oluşturmak için tr etiketini, tabloya ait başlık belirtmek için th kullandık. Başlıkları belirledikten sonra verileri göstermek için ilk önce tbody etiketini, ardından @foreach komutunu kullandık. Burada ktgr isminde bir değişken oluşturup Model içerisinden verileri almış olduk. TBLKATEGORILER tablosunda iki tane sütunları buraya eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/d877a946-dbf0-4bdc-a8ae-ce4687c4271c)
+<br>
+Çalıştırdığımız zaman TBLKATEGORILER tablosuna ait veriler bu şekilde listelenmiş oldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 14 - Ürünleri Listeleme
+
+KategoriController'da yaptığımız gibi aynı işlemleri bu kez TBLURUNLER için yapıyoruz. Bu kez UrunController oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cd0b93a3-833e-4ae4-9cc8-f89c9fe02a27)
+<br>
+
+![image](https://github.com/user-attachments/assets/549cb996-f161-4e16-9928-fe19e753cc51)
+<br>
+
+![image](https://github.com/user-attachments/assets/3c6d3102-97f6-46d6-a4e3-2f08e06283d2)
+<br>
+Burada KATEGORI sütununda isimler yerine ID değerlerini göstermektedir. İlerleyen zamanlarda bu kısmı değiştiriyor olacağız.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 15 - Müşteri Listeleme
+
+MusteriController<br><br>
+
+![image](https://github.com/user-attachments/assets/718ee9dd-fe4d-432c-9735-60dd34544c73)
+<br>
+
+![image](https://github.com/user-attachments/assets/abb9d2d6-0691-4102-b2e7-3fdeaf6cc81f)
+<br>
+
+![image](https://github.com/user-attachments/assets/d81f84b3-f06f-4df9-9305-1159c0cbb101)
+<br><br>
+
+MusteriController listeleme işlemi tamamlandıktan sonra _MainLayout'a gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7dbeab9b-0d93-4d4b-8a69-dcf68c47d391)
+<br>
+Burada menüde yer alan başlıklara tek tek bağlantı adreslerini vermiş olduk.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 16 - Silme Ve Güncelleme Alanlarının Oluşturulması
+
+![image](https://github.com/user-attachments/assets/a59f0093-857c-4e55-8e46-7bf965823ca0)
+<br>
+Burada Kategoriye ait olan Index sayfasına gelip SİL ve GÜNCELLE isminde iki tane daha sütun ekliyoruz.<br>
+Burada ID ve AD değerlerini ekranda gösterdikten sonra bu kez silme ve güncelleme işlemlerini oluşturuyoruz. Burada a etiketini kullanarak ID'ye göre bağlantı vermiş olduk. İlerleyen zamanlarda KategoriController'a ait silme ve güncelleme oluşturacağız. Burada görünümü daha düzgün olsun diye butonlara class ekledik. En altta yer alan link ise yeni bir kategori ekleme işlemini gerçekleştirecektir. Aynı işlemleri ürünler ve müşteriler için de yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c487ea06-241a-43d2-8409-bedcf517392b)
+<br>
+Görünümü bu şekildedir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 17 - HttpGet ve HttpPost
+
+## 🧰 HttpGet ve HttpPost Nedir?
+HttpGet ve HttpPost, HTTP protokolünde kullanılan iki temel isteğin (request) türüdür. Web uygulamalarında özellikle ASP.NET Core, MVC ve Web API gibi çerçevelerde sıkça kullanılırlar.<br><br>
+
+### 1. HttpGet Nedir?
+💠 GET isteği, sunucudan veri almak için kullanılır.<br>
+💠 URL ile birlikte sorgu parametreleri (query string) gönderir.<br>
+💠 Idempotenttir, yani aynı GET isteği tekrar tekrar yapıldığında sunucunun durumu değişmez.<br>
+💠 Güvenli (safe) kabul edilir, çünkü sunucuda veri değiştirmez.<br>
+💠 Önbelleğe alınabilir (cacheable), bu nedenle tarayıcı tarafından saklanabilir.<br>
+💠 Veri boyutu kısıtlıdır, URL içinde parametreler taşındığı için uzun URL’ler sorun yaratabilir.<br><br>
+
+### 2. HttpPost Nedir?
+💠 POST isteği, sunucuya veri göndermek ve yeni kayıt oluşturmak için kullanılır.<br>
+💠 İstek gövdesinde (body) veri taşır, bu nedenle büyük veri gönderimine uygundur.<br>
+💠 İdempotent değildir, yani aynı POST isteği tekrar yapıldığında her seferinde yeni bir veri kaydı oluşabilir.<br>
+💠 Önbelleğe alınmaz, çünkü her isteğin sonucu değişebilir.<br><br>
+
+### 🗒️ Ne Zaman Kullanılmalı?
+✅ <b>HttpGet Kullanılmalı:</b><br>
+💠 Veritabanından veri almak için.<br>
+💠 Sayfalama veya filtreleme işlemleri için.<br>
+💠 Önbellek desteğinden yararlanılacak durumlarda.<br><br>
+
+✅ <b>HttpPost Kullanılmalı:</b><br>
+Form verisi veya JSON gibi büyük veri göndermek için.<br>
+Kullanıcı kaydı, sipariş oluşturma gibi işlemlerde.<br>
+Güvenlik açısından hassas verilerin işlenmesi gerektiğinde.<br><br>
+
+![image](https://github.com/user-attachments/assets/8f61b8cd-5706-4c59-9e51-fc536814560b)
+<br>
+YeniKategori isminde bir metot tanımlayıp View oluşturuyoruz. Kategori ekleme işlemi için HttpGet ve HttpPost metotlarını kullanıyoruz. HttpGet işleminde direkt return View yaparken, HttpPost işleminde ise önce TBLKATEGORILER tablosundan bir tane p1 değişkeni oluşturup ardından Add komutunu kullanarak p1 değerini ekliyoruz. Değişiklikleri kaydetmek için SaveChanges kullanıyoruz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 18 - Kategori Ekleme
+
+![image](https://github.com/user-attachments/assets/05a12996-d375-4ecb-b6c8-adb0623e23b9)
+<br>
+YeniKategori sayfasına geliyoruz ve ilk olarak bir form etiketi oluşturuyoruz. Ardından method kısmında ekleme işlemi yaptığımız için post kullanıyoruz.<br>
+Ardından div etiketiyle ayırma işlemi yapıyoruz. Burada etiket adını Kategori Adı olarak belirliyoruz. Veri girişi için input etiketini kullanıp text olarak belirliyoruz. Metin kutusu görünümünü düzgün bir şekilde göstermek için class form-control olarak kullanıyoruz ve name kısmında ise veri tabanımızda yer alan sütunun ismini yazıyoruz.<br>
+Ardından bir daha div oluşturup bu kez buton oluşturuyoruz ve ekleme işlemini gerçekleştiriyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/187e80bc-fcee-4422-80e5-b528c924fe96)
+<br>
+
+![image](https://github.com/user-attachments/assets/9c535942-d460-4e02-9a40-207f0d570ef5)
+<br>
+
+![image](https://github.com/user-attachments/assets/c982db84-ff52-46ff-8bea-b838f41df1ec)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 19 - Müşteri Ekleme
+
+![image](https://github.com/user-attachments/assets/a7d66742-1b59-4d61-874f-b7d414d7de84)
+<br>
+
+![image](https://github.com/user-attachments/assets/f0869f4b-fb71-477f-aac3-43562f76aca8)
+<br>
+
+![image](https://github.com/user-attachments/assets/488cf1c4-140e-4cb9-b06d-dc8dd511853d)
+<br>
+
+![image](https://github.com/user-attachments/assets/a7569eda-e37d-4590-b864-4750e1fa3074)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 20 - Yeni Ürün Ekleme Sayfa Tasarımı
+
+![image](https://github.com/user-attachments/assets/f723201d-a8b3-41d0-967f-21ed494a9c10)
+<br>
+
+![image](https://github.com/user-attachments/assets/e7d92832-d2e1-4f96-8116-bc0decb23d0b)
+<br>
+
+![image](https://github.com/user-attachments/assets/fda9ec96-e326-4f55-8c5a-6549dada9aea)
+<br>
+
+![image](https://github.com/user-attachments/assets/71142269-12e6-4845-9a88-8826cc714f5f)
+<br>
+Burada ürün ekleme işlemi yaparken Kategori Seçiniz kısmında bize kategori isimleri gelmemektedir. Bunun yerine ilk olarak kategoriye ait olan ID değerini elle yazdık. Ancak bu kullanım pek doğru değildir. Bunun için Kategori Seçiniz kısmını text yerine DropDownList işlemini yapacağız.<br><br>
+
+![image](https://github.com/user-attachments/assets/773a25bf-9f8d-4fda-a9e1-67a9bf1e4c14)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 21 - Dropdownlist Kullanımı
+
+![image](https://github.com/user-attachments/assets/e9ee327c-9640-4ca9-a06d-c6aff5493765)
+<br>
+Örnek olarak herhangi bir siteden dropdownlist kullanımı ile ilgili kodları kopyalayıp Home klasöründe yer alan About sayfasında deneyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/4fcfa937-3f0a-4570-8e3b-fb0e7f30e7cf)
+<br>
+
+![image](https://github.com/user-attachments/assets/88f0eb0c-df90-41e0-858e-81e05823b137)
+<br>
+
+![image](https://github.com/user-attachments/assets/e440967c-72fb-4f93-9ac0-7668b3dcdb17)
+<br>
+Dropdownlist manuel kullanımı bu şekildedir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 22 - DropDownList DB den Veri Çekme
+
+UrunController'a geliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4a28de89-9eb9-442a-82ce-e332457a99f3)
+<br>
+Burada ilk olarak List belirliyoruz ve <> içerisine SelectListItem olarak tanımladıktan sonra degerler isminde bir değişken oluşturuyoruz.<br>
+Ardından LINQ sorgusu oluşturuyoruz. Oluştururken from dedikten sonra i isminde bir değişken tanımlıyoruz ve TBLKATEGORILER verilerine ait listeleri görüntülüyoruz.<br>
+Ardından select new SelectListItem diyerek {} işaretiyle ID ve AD değerlerini giriyoruz.<br>
+Burada Text değeri kategoriye ait adını, Value değeri ise kategoriye ait ID değerini gösterir. Değerleri yazdıktan sonra ToList metodunu ekliyoruz.<br>
+En sonda ViewBag ile taşıma işlemini yapıyoruz. Burada YeniUrun sayfasına ait olan Kategori Seçiniz kısmında text yerine Dropdownlist kullanacağız. ViewBag işlemini buraya taşıyor olacağız.<br><br>
+
+### LINQ Nedir?
+LINQ (Language Integrated Query), .NET platformunda veri kaynaklarına (koleksiyonlar, SQL veritabanları, XML dosyaları vb.) sorgu yapmayı sağlayan, C# ve VB.NET dillerine entegre edilmiş bir sorgulama dilidir. LINQ sayesinde SQL benzeri ifadelerle veri üzerinde sorgular ve işlemler gerçekleştirilebilir.<br><br>
+
+![image](https://github.com/user-attachments/assets/4092ca18-c56a-4837-bfed-ba8a473da9b9)
+<br>
+YeniUrun sayfasına geldikten sonra en üst tarafa bir tane model oluşturmamız gerekecektir. Buradaki model ürünlere ait olan Kategorileri eklemek için kullandık.<br>
+Kategori Seçiniz kısmına geldiğimizde text kısmını kaldırıp yerine @Html.DropDownListFor kullandıktan sonra burada LINQ üzerinden m türünde bir değişken belirledik ve burada KATEGORIAD değerlerini gösterdik.<br>
+Ardından List türünden SelectListItem olarak belirleyip ViewBag ile taşıma işlemini yapmış olduk. Buradaki yazdığımız dgr değerini aynısını buraya ekliyoruz.<br>
+Ardından formumuzun görüntüsünü bozmamak için class türünden form-control kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/114d0ec9-fd3e-484b-b419-773735b21448)
+<br>
+Kategori Seçiniz kısmındaki veriler gelmiş oldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 23 - Yeni Ürün Ekleme
+
+![image](https://github.com/user-attachments/assets/d5c24366-f6a4-4392-85f4-33d47b0f7152)
+<br>
+Burada yeni bir ürün ekleme işlemi gerçekleştirmek için kategoriyi dropdown'dan seçip ekleyeceğiz. LINQ üzerinden gidiyoruz.<br>
+Var türünden ktg isminde bir değişken oluşturup TBLKATEGORILER tablosundan Where şartını yazıyoruz.<br>
+LINQ sorgusundan m isminde bir değişken oluşturup KATEGORIID değeri ile TBLKATEGORILER tablosundaki KATEGORIID değerine eşitlemeye çalıştıktan sonra FirstOrDefault metodunu kullanıyoruz.<br>
+Ardından p1.TBLKATEGORILER değerini ktg değerine atıyoruz.<br>
+En sonda yer alan return View yerine return RedirectToAction kullanıyoruz. RedirectToAction içerisindeki Index ise kaydetme işlemi gerçekleştikten sonra direkt Index sayfasına atayacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/e62f8b8a-7634-438f-804b-5d6d7bde75e3)
+<br>
+Burada küçük bir değişiklik yapıyoruz. En üstte yer alan Models.Entity'den sonra TBLURUNLER, Dropdownlist kısmında ise TBLKATEGORILER.KATEGORIID olarak değiştiriyoruz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 24 - ID'ye göre Kategori Adı Getirme
+
+UrunController'a ait Index sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/9173e2ef-5175-4dd5-9cc8-0d6728439ca0)
+<br>
+Burada yapacağımız tek değişiklik URUNKATEGORI yerine TBLKATEGORILER.KATEGORIAD ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5be0d2a4-186d-4610-8161-15ef21b8a028)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 25 - Kategori Silme
+
+![image](https://github.com/user-attachments/assets/fbdd3ca5-7790-4ea2-ab53-c5972b9f6f43)
+<br>
+Silme işlemi ID değere göre yapılmaktadır. Burada kategori isminde bir değişken tanımlayıp ID değerini bulmak için Find metodunu tanımlıyoruz.<br>
+Ardından bulunan değeri silmek için Remove metodunu uyguluyoruz ve değişiklikleri kaydediyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a528196a-d55a-4276-be9b-5d9b2500d66a)
+<br>
+
+![image](https://github.com/user-attachments/assets/a7c4f2ad-a050-4d17-8662-402e995437af)
+<br><br>
+
+<hr>
+
