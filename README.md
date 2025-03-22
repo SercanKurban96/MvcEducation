@@ -1011,3 +1011,39 @@ Bu şekilde hata vermektedir. Bunun yerine hata mesajı ekleyebiliriz.<br><br>
 <hr>
 
 # 🖥️ Mvc Ders 35 - Validation Kontrolleri 2 Required
+
+![image](https://github.com/user-attachments/assets/d2a7c4d5-6d04-4a5a-95b7-6f381fa62a16)
+<br>
+TBLKATEGORILER sayfasına geldik. Burada bir hata mesajı eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/e11d61bf-369d-4a40-9c4c-cd44eee02c4c)
+<br>
+YeniKategori sayfasına gelip birkaç değişiklik yapıyoruz. En üste bir model oluşturuyoruz.<br>
+TextBoxFor ekledikten sonra burada hata mesajını göstermesi için ilk olarak ValidationMessageFor etiketi oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/e4a20729-5068-487a-bd81-c07611502acd)
+<br>
+KategoriController'a gelip HttpPost işlemindeki YeniKategori'ye bir şart belirliyoruz. Burada doğrulanma işlemi yapılmadıysa direkt View kısmından YeniKategori sayfasına döndürecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/9aa2b9a9-eb5f-45a7-8c60-0c5319fa7435)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 36 - StringLength Validation
+
+![image](https://github.com/user-attachments/assets/580c0db6-6dd0-4472-8555-9db9e031d9ec)
+<br>
+TBLMUSTERILER tablosu üzerinden validasyon işlemlerini yapıyoruz. Burada maksimum 50 karakter alabilme özelliğini ekledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/0e4341a9-798b-48a9-bf03-974631ed8544)
+<br>
+
+![image](https://github.com/user-attachments/assets/89eb70d3-597c-4ba9-a42f-c27c9ef3f73e)
+<br>
+
+![image](https://github.com/user-attachments/assets/c62128a7-1dba-4c7c-b5ee-e1451866a42b)
+<br><br>
+
+<hr>
+
