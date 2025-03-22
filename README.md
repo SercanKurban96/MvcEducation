@@ -898,3 +898,21 @@ Index sayfasına gidip Güncelleme işleminde Guncelle sayfası yerine MusteriGe
 
 <hr>
 
+# 🖥️ Mvc Ders 33 - Müşteri Bilgilerini Güncelleme
+
+![image](https://github.com/user-attachments/assets/dd13fc16-50a1-478a-b0fb-eb8881b98683)
+<br>
+
+![image](https://github.com/user-attachments/assets/818c4378-3798-45fb-8573-97dd7b1b600d)
+<br>
+Buradan Yeliz Asya adlı müşterinin ismini ve soyismini büyük harflerle güncelleyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/9e66fa3e-d7ed-424a-a52c-d80b57ce967a)
+<br>
+
+![image](https://github.com/user-attachments/assets/6578ff44-ae3a-47f0-8ee8-5383924ba027)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 34 - Validation Kontrolleri Required
