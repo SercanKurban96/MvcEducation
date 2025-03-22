@@ -522,3 +522,28 @@ Tekrardan Index üzerinden çalıştırdığımız zaman karşımıza bu şekild
 
 <hr>
 
+# 🖥️ Mvc Ders 13 - Kategorileri Listeleme
+
+![image](https://github.com/user-attachments/assets/44efbcf5-8bd1-4942-a89a-c740aa035e2b)
+<br>
+İlk olarak using kütüphanesinde tanımladığımız modeli buraya ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/6cce3330-d428-4b75-9fb1-4013972ae55d)
+<br>
+Ardından oluşturduğumuz modeli buraya ekliyoruz ve ismini db olarak belirliyoruz. Listelemek için var türünden degerler isminde bir değişken oluşturup TBLKATEGORILER tablosundan ToList metoduyla listeleme işlemini yaptık. Ardından return View içerisine degerler değişkenini eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/0eb41cd8-ff0e-4c84-8303-12850d7f6ad6)
+<br>
+Index sayfasına gidiyoruz. Burada tanımlamamız gereken iki tane komut var. Bunlardan birincisi @using MvcStok.Models.Entity, ikincisi ise bizim bir modele ihtiyacımız olacaktır. Kullanacağımız komut ise @model List<TBLKATEGORILER> olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/45c418c3-6621-4e33-ad0d-57e2ce51dbe1)
+<br>
+Burada listeleme işleminde verilerimizin düzgün bir şekilde gözükmesi için bir tane tablo oluşturduk. Tablo oluşturmak için HTML etiketlerinden table olanı kullandık. Burada tablonun kenarlıklarını belirlemek için table table-bordered kullandık. Ardından satır oluşturmak için tr etiketini, tabloya ait başlık belirtmek için th kullandık. Başlıkları belirledikten sonra verileri göstermek için ilk önce tbody etiketini, ardından @foreach komutunu kullandık. Burada ktgr isminde bir değişken oluşturup Model içerisinden verileri almış olduk. TBLKATEGORILER tablosunda iki tane sütunları buraya eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/d877a946-dbf0-4bdc-a8ae-ce4687c4271c)
+<br>
+Çalıştırdığımız zaman TBLKATEGORILER tablosuna ait veriler bu şekilde listelenmiş oldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 14 - Ürünleri Listeleme
