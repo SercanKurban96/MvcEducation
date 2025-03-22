@@ -916,3 +916,98 @@ Buradan Yeliz Asya adlı müşterinin ismini ve soyismini büyük harflerle gün
 <hr>
 
 # 🖥️ Mvc Ders 34 - Validation Kontrolleri Required
+ASP.NET MVC'de Validation (Doğrulama) Kontrolleri, kullanıcıdan alınan verilerin doğruluğunu sağlamak için kullanılır. MVC, doğrulama işlemlerini hem istemci (client-side) hem de sunucu (server-side) tarafında yapmayı destekler.<br><br>
+
+### 1. Data Annotations ile Model Bazlı Doğrulama
+Data Annotations, model üzerinde [Required], [StringLength], [Range] gibi öznitelikleri (attribute) kullanarak doğrulama yapmayı sağlar.<br>
+Örnek Kullanım:<br><br>
+
+public class KullaniciModel<br>
+{<br>
+    [Required(ErrorMessage = "Ad alanı zorunludur.")]<br>
+    [StringLength(50, ErrorMessage = "Ad en fazla 50 karakter olabilir.")]<br>
+    public string Ad { get; set; }<br>
+<br>
+    [Required(ErrorMessage = "Email alanı boş olamaz.")]<br>
+    [EmailAddress(ErrorMessage = "Geçerli bir email adresi giriniz.")]<br>
+    public string Email { get; set; }<br>
+<br>
+    [Range(18, 60, ErrorMessage = "Yaş 18 ile 60 arasında olmalıdır.")]<br>
+    public int Yas { get; set; }<br>
+}<br><br>
+
+💡 Bu modelde:<br><br>
+💠 Required: Boş bırakılamaz.<br>
+💠 StringLength(50): Maksimum 50 karakter olabilir.<br>
+💠 EmailAddress: Geçerli bir e-posta olup olmadığını kontrol eder.<br>
+💠 Range(18, 60): 18 ile 60 arasında olmasını zorunlu kılar.<br><br>
+
+### 2. Controller'da Doğrulama Kontrolleri
+ModelState.IsValid, modelin doğrulama kurallarına uyup uymadığını kontrol eder.<br><br>
+
+public ActionResult Kaydet(KullaniciModel model)<br>
+{<br>
+    if (ModelState.IsValid)<br>
+    {<br>
+        // Verileri kaydetme işlemi yapılır.<br>
+        return RedirectToAction("Basari");<br>
+    }<br>
+<br>
+    return View(model);<br>
+}<br><br>
+
+💡 ModelState.IsValid: Model doğrulamalarını kontrol eder. Eğer hata varsa form tekrar gösterilir.<br><br>
+
+### 3. View Katmanında Validation Mesajlarını Gösterme
+View tarafında doğrulama mesajlarını göstermek için Html.ValidationMessageFor kullanılır.<br>
+Örnek Kullanım (View - Razor): <br><br>
+
+@model KullaniciModel<br>
+<br>
+<form asp-action="Kaydet" method="post"><br>
+    <label>Ad:</label><br>
+    <input asp-for="Ad" /><br>
+    <span asp-validation-for="Ad" class="text-danger"></span><br>
+<br>
+    <label>Email:</label><br>
+    <input asp-for="Email" /><br>
+    <span asp-validation-for="Email" class="text-danger"></span><br>
+<br>
+    <label>Yaş:</label><br>
+    <input asp-for="Yas" /><br>
+    <span asp-validation-for="Yas" class="text-danger"></span><br>
+<br>
+    <button type="submit">Kaydet</button><br>
+</form><br>
+<br>
+@section Scripts {<br>
+    @await Html.PartialAsync("_ValidationScriptsPartial")<br>
+}<br><br>
+
+💡 <b>Önemli Noktalar:</b><br>
+💠 asp-validation-for="AlanAdi" ile hata mesajlarını görüntüleyebiliriz.<br>
+💠 _ValidationScriptsPartial, istemci tarafında jQuery validation çalıştırır.<br><br>
+
+![image](https://github.com/user-attachments/assets/ec3de70d-9003-493b-bf9d-4167f2e11505)
+<br>
+Models klasörüne gelip Entity klasöründe yer alan Model'e tıklayıp Model1.tt'den TBLKATEGORILER.cs tablosunu seçiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/45546b70-6971-40ca-941c-87c7eb2f6703)
+<br>
+TBLKATEGORILER sayfası bu şekilde çıkmaktadır. Buradan Validation işlemlerimizi yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/250a0c21-3a8d-4ec2-8036-07dd83b6aad7)
+<br>
+Burada KATEGORIAD sütununu boş geçmemek için hemen üzerine Required ekliyoruz. Bunun için using System.ComponentModel.DataAnnotations; kütüphanesini ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/568f7f4d-739b-4bbd-a89f-3142d848ecb0)
+<br>
+Kategori ekleme sayfasına gidiyoruz ve herhangi bir şey yazmadan direkt Kategori Ekle butonuna tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/839ffd0e-a90d-4bb5-9831-7370b1d040e3)
+<br>
+Bu şekilde hata vermektedir. Bunun yerine hata mesajı verebiliriz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 35 - Validation Kontrolleri 2 Required
