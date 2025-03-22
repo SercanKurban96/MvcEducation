@@ -763,3 +763,17 @@ Burada yapacağımız tek değişiklik URUNKATEGORI yerine TBLKATEGORILER.KATEGO
 <hr>
 
 # 🖥️ Mvc Ders 25 - Kategori Silme
+
+![image](https://github.com/user-attachments/assets/fbdd3ca5-7790-4ea2-ab53-c5972b9f6f43)
+<br>
+Silme işlemi ID değere göre yapılmaktadır. Burada kategori isminde bir değişken tanımlayıp ID değerini bulmak için Find metodunu tanımlıyoruz.<br>
+Ardından bulunan değeri silmek için Remove metodunu uyguluyoruz ve değişiklikleri kaydediyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a528196a-d55a-4276-be9b-5d9b2500d66a)
+<br>
+
+![image](https://github.com/user-attachments/assets/a7c4f2ad-a050-4d17-8662-402e995437af)
+<br><br>
+
+<hr>
+
