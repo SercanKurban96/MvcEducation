@@ -564,3 +564,36 @@ Burada KATEGORI sütununda isimler yerine ID değerlerini göstermektedir. İler
 
 # 🖥️ Mvc Ders 15 - Müşteri Listeleme
 
+MusteriController<br><br>
+
+![image](https://github.com/user-attachments/assets/718ee9dd-fe4d-432c-9735-60dd34544c73)
+<br>
+
+![image](https://github.com/user-attachments/assets/abb9d2d6-0691-4102-b2e7-3fdeaf6cc81f)
+<br>
+
+![image](https://github.com/user-attachments/assets/d81f84b3-f06f-4df9-9305-1159c0cbb101)
+<br><br>
+
+MusteriController listeleme işlemi tamamlandıktan sonra _MainLayout'a gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7dbeab9b-0d93-4d4b-8a69-dcf68c47d391)
+<br>
+Burada menüde yer alan başlıklara tek tek bağlantı adreslerini vermiş olduk.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 16 - Silme Ve Güncelleme Alanlarının Oluşturulması
+
+![image](https://github.com/user-attachments/assets/a59f0093-857c-4e55-8e46-7bf965823ca0)
+<br>
+Burada Kategoriye ait olan Index sayfasına gelip SİL ve GÜNCELLE isminde iki tane daha sütun ekliyoruz.<br>
+Burada ID ve AD değerlerini ekranda gösterdikten sonra bu kez silme ve güncelleme işlemlerini oluşturuyoruz. Burada a etiketini kullanarak ID'ye göre bağlantı vermiş olduk. İlerleyen zamanlarda KategoriController'a ait silme ve güncelleme oluşturacağız. Burada görünümü daha düzgün olsun diye butonlara class ekledik. En altta yer alan link ise yeni bir kategori ekleme işlemini gerçekleştirecektir. Aynı işlemleri ürünler ve müşteriler için de yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c487ea06-241a-43d2-8409-bedcf517392b)
+<br>
+Görünümü bu şekildedir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 17 - HttpGet ve HttpPost
