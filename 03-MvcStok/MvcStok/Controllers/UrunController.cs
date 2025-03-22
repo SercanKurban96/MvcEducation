@@ -63,13 +63,18 @@ namespace MvcStok.Controllers
             return View("UrunGetir", urun);
         }
 
-        //public ActionResult Guncelle(TBLMUSTERILER p1)
-        //{
-        //    var musteri = db.TBLMUSTERILER.Find(p1.MUSTERIID);
-        //    musteri.MUSTERIAD = p1.MUSTERIAD;
-        //    musteri.MUSTERISOYAD = p1.MUSTERISOYAD;
-        //    db.SaveChanges();
-        //    return RedirectToAction("Index");
-        //}
+        public ActionResult Guncelle(TBLURUNLER p1)
+        {
+            var urun = db.TBLURUNLER.Find(p1.URUNID);
+            urun.URUNAD = p1.URUNAD;
+            urun.MARKA = p1.MARKA;
+            urun.STOK = p1.STOK;
+            urun.FIYAT = p1.FIYAT;
+            //urun.URUNKATEGORI = p1.URUNKATEGORI;
+            var ktg = db.TBLKATEGORILER.Where(m => m.KATEGORIID == p1.TBLKATEGORILER.KATEGORIID).FirstOrDefault();
+            urun.URUNKATEGORI = ktg.KATEGORIID;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
