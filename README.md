@@ -707,4 +707,31 @@ Dropdownlist manuel kullanımı bu şekildedir.<br><br>
 
 # 🖥️ Mvc Ders 22 - DropDownList DB den Veri Çekme
 
+UrunController'a geliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4a28de89-9eb9-442a-82ce-e332457a99f3)
+<br>
+Burada ilk olarak List belirliyoruz ve <> içerisine SelectListItem olarak tanımladıktan sonra degerler isminde bir değişken oluşturuyoruz.<br>
+Ardından LINQ sorgusu oluşturuyoruz. Oluştururken from dedikten sonra i isminde bir değişken tanımlıyoruz ve TBLKATEGORILER verilerine ait listeleri görüntülüyoruz.<br>
+Ardından select new SelectListItem diyerek {} işaretiyle ID ve AD değerlerini giriyoruz.<br>
+Burada Text değeri kategoriye ait adını, Value değeri ise kategoriye ait ID değerini gösterir. Değerleri yazdıktan sonra ToList metodunu ekliyoruz.<br>
+En sonda ViewBag ile taşıma işlemini yapıyoruz. Burada YeniUrun sayfasına ait olan Kategori Seçiniz kısmında text yerine Dropdownlist kullanacağız. ViewBag işlemini buraya taşıyor olacağız.<br><br>
+
+### LINQ Nedir?
+LINQ (Language Integrated Query), .NET platformunda veri kaynaklarına (koleksiyonlar, SQL veritabanları, XML dosyaları vb.) sorgu yapmayı sağlayan, C# ve VB.NET dillerine entegre edilmiş bir sorgulama dilidir. LINQ sayesinde SQL benzeri ifadelerle veri üzerinde sorgular ve işlemler gerçekleştirilebilir.<br><br>
+
+![image](https://github.com/user-attachments/assets/4092ca18-c56a-4837-bfed-ba8a473da9b9)
+<br>
+YeniUrun sayfasına geldikten sonra en üst tarafa bir tane model oluşturmamız gerekecektir. Buradaki model ürünlere ait olan Kategorileri eklemek için kullandık.<br>
+Kategori Seçiniz kısmına geldiğimizde text kısmını kaldırıp yerine @Html.DropDownListFor kullandıktan sonra burada LINQ üzerinden m türünde bir değişken belirledik ve burada KATEGORIAD değerlerini gösterdik.<br>
+Ardından List türünden SelectListItem olarak belirleyip ViewBag ile taşıma işlemini yapmış olduk. Buradaki yazdığımız dgr değerini aynısını buraya ekliyoruz.<br>
+Ardından formumuzun görüntüsünü bozmamak için class türünden form-control kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/114d0ec9-fd3e-484b-b419-773735b21448)
+<br>
+Kategori Seçiniz kısmındaki veriler gelmiş oldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 23 - Yeni Ürün Ekleme
 
