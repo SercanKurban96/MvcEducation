@@ -667,3 +667,44 @@ Ardından bir daha div oluşturup bu kez buton oluşturuyoruz ve ekleme işlemin
 
 <hr>
 
+# 🖥️ Mvc Ders 20 - Yeni Ürün Ekleme Sayfa Tasarımı
+
+![image](https://github.com/user-attachments/assets/f723201d-a8b3-41d0-967f-21ed494a9c10)
+<br>
+
+![image](https://github.com/user-attachments/assets/e7d92832-d2e1-4f96-8116-bc0decb23d0b)
+<br>
+
+![image](https://github.com/user-attachments/assets/fda9ec96-e326-4f55-8c5a-6549dada9aea)
+<br>
+
+![image](https://github.com/user-attachments/assets/71142269-12e6-4845-9a88-8826cc714f5f)
+<br>
+Burada ürün ekleme işlemi yaparken Kategori Seçiniz kısmında bize kategori isimleri gelmemektedir. Bunun yerine ilk olarak kategoriye ait olan ID değerini elle yazdık. Ancak bu kullanım pek doğru değildir. Bunun için Kategori Seçiniz kısmını text yerine DropDownList işlemini yapacağız.<br><br>
+
+![image](https://github.com/user-attachments/assets/773a25bf-9f8d-4fda-a9e1-67a9bf1e4c14)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 21 - Dropdownlist Kullanımı
+
+![image](https://github.com/user-attachments/assets/e9ee327c-9640-4ca9-a06d-c6aff5493765)
+<br>
+Örnek olarak herhangi bir siteden dropdownlist kullanımı ile ilgili kodları kopyalayıp Home klasöründe yer alan About sayfasında deneyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/4fcfa937-3f0a-4570-8e3b-fb0e7f30e7cf)
+<br>
+
+![image](https://github.com/user-attachments/assets/88f0eb0c-df90-41e0-858e-81e05823b137)
+<br>
+
+![image](https://github.com/user-attachments/assets/e440967c-72fb-4f93-9ac0-7668b3dcdb17)
+<br>
+Dropdownlist manuel kullanımı bu şekildedir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 22 - DropDownList DB den Veri Çekme
+
+
