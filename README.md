@@ -771,9 +771,92 @@ Ardından bulunan değeri silmek için Remove metodunu uyguluyoruz ve değişikl
 
 ![image](https://github.com/user-attachments/assets/a528196a-d55a-4276-be9b-5d9b2500d66a)
 <br>
+Buradan Banyo Aletleri kategorisini silelim.<br><br>
 
 ![image](https://github.com/user-attachments/assets/a7c4f2ad-a050-4d17-8662-402e995437af)
 <br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 26 - Ürün Silme
+
+![image](https://github.com/user-attachments/assets/a7ab509e-13e7-4695-9740-80c37fce9843)
+<br>
+
+![image](https://github.com/user-attachments/assets/69e53019-cf28-4c24-954a-ad2f78e980e6)
+<br>
+Buradan Mikrodalga ürününü silelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/11dddddb-7af0-412e-88d6-b38efa76c052)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 27 - Müşteri Silme
+
+![image](https://github.com/user-attachments/assets/1a1f362b-9458-4285-ae36-21651780e58f)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 28 - Sayfalar Arası Veri Taşıma Kategori
+
+![image](https://github.com/user-attachments/assets/322100c3-46bf-470a-8b58-d8f3d741d784)
+<br>
+Kategori getirme işlemini ID'ye göre getiriyoruz. Ardından bir View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7824f611-35e4-4744-adda-dce47fdfcba9)
+<br>
+Kategoriye ait Index'e gelip küçük bir değişiklik yapıyoruz. Güncelleme işleminde Guncelle sayfası yerine KategoriGetir sayfasına gitmesini sağlıyoruz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 29 - Kategori Güncelleme Sayfası Oluşturma
+
+KategoriGetir sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4af0aeb2-2bca-4c08-ae13-383c7e9c0202)
+<br>
+En üst kısma bir tane model oluşturuyoruz.<br>
+Burada @using Html.BeginForm kullanıyoruz. İlk parametrede Action yani metodun ismini, ikinci parametrede Controller ismini, üçüncü parametrede FormMethod Get veya Post işlemini yazıyoruz.<br>
+Ardından div kullanarak tasarımı düzgün hale getirmeyi sağlıyoruz. Burada LabelFor ve TextBoxFor etiketlerini kullanıyoruz. LabelFor etiketin gözükeceği kısım, TextBoxFor metin kutusunu gösteren kısımdır. ID ve AD değerlerini gösteriyoruz.<br>
+En altta bir tane buton oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7e85642c-f417-4e82-9c1f-f0717e471eb4)
+<br>
+Herhangi bir kategori işlemi için GÜNCELLE butonuna tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d44f223f-da13-4136-a779-ce6b9e2550c2)
+<br>
+Burada güncelleme sayfası tasarımını oluşturduk.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 30 - Küçük Bir Tanıtım :)
+
+![image](https://github.com/user-attachments/assets/bdcd1ea6-148c-4521-8e7d-379f816dc6f4)
+<br>
+Kategori Sayfası<br><br>
+
+![image](https://github.com/user-attachments/assets/76df46d5-7e87-48c0-9e8d-c6f2526f96ba)
+<br>
+Kategori Ekleme İşlemi<br><br>
+
+![image](https://github.com/user-attachments/assets/1a312a7d-082a-4910-8244-65ee389fa612)
+<br>
+Ürün Sayfası<br><br>
+
+![image](https://github.com/user-attachments/assets/c3f8ad23-8b97-40bf-8a75-a803a8cbaef7)
+<br>
+Ürün Ekleme İşlemi<br><br>
+
+![image](https://github.com/user-attachments/assets/276debcd-799b-4b63-a31a-0f607729ca88)
+<br>
+Müşteri Sayfası<br><br>
+
+![image](https://github.com/user-attachments/assets/40a0cdb1-b852-41b3-b93f-38fef56b2ed5)
+<br>
+Müşteri Ekleme İşlemi<br><br>
 
 <hr>
 
