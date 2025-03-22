@@ -514,3 +514,11 @@ Tekrardan Index üzerinden çalıştırdığımız zaman karşımıza bu şekild
 
 # 🖥️ Mvc Ders 12 - Menüyü Türkçeleştirme
 
+![image](https://github.com/user-attachments/assets/61053c10-df4e-46c3-ba13-27182a88271d)
+<br>
+
+![image](https://github.com/user-attachments/assets/2b4c8426-095e-41a6-a9e3-4be0c0aeb264)
+<br><br>
+
+<hr>
+
