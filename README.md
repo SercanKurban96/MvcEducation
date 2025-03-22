@@ -340,3 +340,19 @@ Script dosyalarına da aynısını uyguluyoruz.<br><br>
 ![image](https://github.com/user-attachments/assets/33c6036a-5322-4e02-9de3-dd2045bbab12)
 <br><br>
 
+<hr>
+
+# 🖥️ MVC Ders 6 - Statik Web Projesi ~ 2
+
+Bu bölümde herhangi bir veri tabanı kullanmadan statik olarak alanlarımızı değiştirdik.<br><br>
+
+![image](https://github.com/user-attachments/assets/5d325a80-1dc7-4b11-b555-d7fea805ff20)
+<br>
+
+![image](https://github.com/user-attachments/assets/13995e2b-fb2c-4ea2-a68f-128b11b48dfd)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 7 - Ürün Stok Projesi Db ve Tablo Oluşturma
+
