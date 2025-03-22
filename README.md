@@ -1107,3 +1107,14 @@ LCD ürünün kategorisini BEYAZ EŞYA yerine DİĞER ÜRÜNLER olarak güncelle
 <hr>
 
 # 🖥️ Mvc Ders 41 - Ürün Validation Kontrolleri
+
+![image](https://github.com/user-attachments/assets/5c389d72-aa8e-498d-b598-1a996a6774ba)
+<br>
+Burada Entity kısmından Models'e ait TBLURUNLER sayfasından validasyon işlemleri yerine direkt YeniUrun sayfasına gelip HTML'ye ait olan validasyon işlemlerini uyguladık.<br><br>
+
+![image](https://github.com/user-attachments/assets/33d35931-09a0-480b-816a-e2f1da392b05)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 42 - Sayfalama (Paging)
