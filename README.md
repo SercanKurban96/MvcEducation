@@ -653,3 +653,17 @@ Ardından bir daha div oluşturup bu kez buton oluşturuyoruz ve ekleme işlemin
 
 # 🖥️ Mvc Ders 19 - Müşteri Ekleme
 
+![image](https://github.com/user-attachments/assets/a7d66742-1b59-4d61-874f-b7d414d7de84)
+<br>
+
+![image](https://github.com/user-attachments/assets/f0869f4b-fb71-477f-aac3-43562f76aca8)
+<br>
+
+![image](https://github.com/user-attachments/assets/488cf1c4-140e-4cb9-b06d-dc8dd511853d)
+<br>
+
+![image](https://github.com/user-attachments/assets/a7569eda-e37d-4590-b864-4750e1fa3074)
+<br><br>
+
+<hr>
+
