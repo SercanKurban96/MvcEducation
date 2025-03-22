@@ -771,8 +771,278 @@ Ardından bulunan değeri silmek için Remove metodunu uyguluyoruz ve değişikl
 
 ![image](https://github.com/user-attachments/assets/a528196a-d55a-4276-be9b-5d9b2500d66a)
 <br>
+Buradan Banyo Aletleri kategorisini silelim.<br><br>
 
 ![image](https://github.com/user-attachments/assets/a7c4f2ad-a050-4d17-8662-402e995437af)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 26 - Ürün Silme
+
+![image](https://github.com/user-attachments/assets/a7ab509e-13e7-4695-9740-80c37fce9843)
+<br>
+
+![image](https://github.com/user-attachments/assets/69e53019-cf28-4c24-954a-ad2f78e980e6)
+<br>
+Buradan Mikrodalga ürününü silelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/11dddddb-7af0-412e-88d6-b38efa76c052)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 27 - Müşteri Silme
+
+![image](https://github.com/user-attachments/assets/1a1f362b-9458-4285-ae36-21651780e58f)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 28 - Sayfalar Arası Veri Taşıma Kategori
+
+![image](https://github.com/user-attachments/assets/322100c3-46bf-470a-8b58-d8f3d741d784)
+<br>
+Kategori getirme işlemini ID'ye göre getiriyoruz. Ardından bir View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7824f611-35e4-4744-adda-dce47fdfcba9)
+<br>
+Kategoriye ait Index'e gelip küçük bir değişiklik yapıyoruz. Güncelleme işleminde Guncelle sayfası yerine KategoriGetir sayfasına gitmesini sağlıyoruz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 29 - Kategori Güncelleme Sayfası Oluşturma
+
+KategoriGetir sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4af0aeb2-2bca-4c08-ae13-383c7e9c0202)
+<br>
+En üst kısma bir tane model oluşturuyoruz.<br>
+Burada @using Html.BeginForm kullanıyoruz. İlk parametrede Action yani metodun ismini, ikinci parametrede Controller ismini, üçüncü parametrede FormMethod Get veya Post işlemini yazıyoruz.<br>
+Ardından div kullanarak tasarımı düzgün hale getirmeyi sağlıyoruz. Burada LabelFor ve TextBoxFor etiketlerini kullanıyoruz. LabelFor etiketin gözükeceği kısım, TextBoxFor metin kutusunu gösteren kısımdır. ID ve AD değerlerini gösteriyoruz.<br>
+En altta bir tane buton oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7e85642c-f417-4e82-9c1f-f0717e471eb4)
+<br>
+Herhangi bir kategori işlemi için GÜNCELLE butonuna tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d44f223f-da13-4136-a779-ce6b9e2550c2)
+<br>
+Burada güncelleme sayfası tasarımını oluşturduk.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 30 - Küçük Bir Tanıtım :)
+
+![image](https://github.com/user-attachments/assets/bdcd1ea6-148c-4521-8e7d-379f816dc6f4)
+<br>
+Kategori Sayfası<br><br>
+
+![image](https://github.com/user-attachments/assets/76df46d5-7e87-48c0-9e8d-c6f2526f96ba)
+<br>
+Kategori Ekleme İşlemi<br><br>
+
+![image](https://github.com/user-attachments/assets/1a312a7d-082a-4910-8244-65ee389fa612)
+<br>
+Ürün Sayfası<br><br>
+
+![image](https://github.com/user-attachments/assets/c3f8ad23-8b97-40bf-8a75-a803a8cbaef7)
+<br>
+Ürün Ekleme İşlemi<br><br>
+
+![image](https://github.com/user-attachments/assets/276debcd-799b-4b63-a31a-0f607729ca88)
+<br>
+Müşteri Sayfası<br><br>
+
+![image](https://github.com/user-attachments/assets/40a0cdb1-b852-41b3-b93f-38fef56b2ed5)
+<br>
+Müşteri Ekleme İşlemi<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 31 Kategori Bilgisi Güncelleme
+
+![image](https://github.com/user-attachments/assets/2b3c5ec4-5fb8-49c7-8a00-c64237b01a2a)
+<br>
+Burada Guncelle metodunu oluşturup TBLKATEGORILER tablosuna ait olan p1 değişkenini ekliyoruz.<br>
+Burada ktg değişkenini kullanıp ID değerini bulmak için Find metodunu kullanıyoruz.<br>
+Ardından güncellenecek alanlar hangisiyse onları tek tek yazıyoruz. Burada KATEGORIAD isminde tek bir alan olduğu için ktg değişkenindeki KATEGORIAD ile p1 değişkenindeki KATEGORIAD değerlerini eşitliyoruz.<br>
+Ardından değişiklikleri kaydediyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/75dc5f7b-1bb5-4a99-a630-a523bfe6cd03)
+<br>
+DİĞER ÜRÜNLER ismini DİĞER olarak güncelleyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/a17a0a1f-e151-416b-8590-775c66dcc5c3)
+<br>
+
+![image](https://github.com/user-attachments/assets/60765ef8-4a1a-4767-a423-8d97144b07ab)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 32 - Müşteri Bilgilerini Güncelleme Sayfasına Taşıma
+
+![image](https://github.com/user-attachments/assets/6de89c75-8eee-4586-8049-12a3b581a4de)
+<br>
+
+![image](https://github.com/user-attachments/assets/86943d2f-c826-4a8f-8fad-52c850313135)
+<br>
+Index sayfasına gidip Güncelleme işleminde Guncelle sayfası yerine MusteriGetir sayfasına gitmesini sağlıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/bce7015d-88a3-4d3b-99b9-c0b05140c709)
+<br>
+
+![image](https://github.com/user-attachments/assets/26cbe62b-a80f-4aa8-8044-85279a681ff8)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 33 - Müşteri Bilgilerini Güncelleme
+
+![image](https://github.com/user-attachments/assets/dd13fc16-50a1-478a-b0fb-eb8881b98683)
+<br>
+
+![image](https://github.com/user-attachments/assets/818c4378-3798-45fb-8573-97dd7b1b600d)
+<br>
+Buradan Yeliz Asya adlı müşterinin ismini ve soyismini büyük harflerle güncelleyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/9e66fa3e-d7ed-424a-a52c-d80b57ce967a)
+<br>
+
+![image](https://github.com/user-attachments/assets/6578ff44-ae3a-47f0-8ee8-5383924ba027)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 34 - Validation Kontrolleri Required
+ASP.NET MVC'de Validation (Doğrulama) Kontrolleri, kullanıcıdan alınan verilerin doğruluğunu sağlamak için kullanılır. MVC, doğrulama işlemlerini hem istemci (client-side) hem de sunucu (server-side) tarafında yapmayı destekler.<br><br>
+
+### 1. Data Annotations ile Model Bazlı Doğrulama
+Data Annotations, model üzerinde [Required], [StringLength], [Range] gibi öznitelikleri (attribute) kullanarak doğrulama yapmayı sağlar.<br>
+Örnek Kullanım:<br><br>
+
+public class KullaniciModel<br>
+{<br>
+    [Required(ErrorMessage = "Ad alanı zorunludur.")]<br>
+    [StringLength(50, ErrorMessage = "Ad en fazla 50 karakter olabilir.")]<br>
+    public string Ad { get; set; }<br>
+<br>
+    [Required(ErrorMessage = "Email alanı boş olamaz.")]<br>
+    [EmailAddress(ErrorMessage = "Geçerli bir email adresi giriniz.")]<br>
+    public string Email { get; set; }<br>
+<br>
+    [Range(18, 60, ErrorMessage = "Yaş 18 ile 60 arasında olmalıdır.")]<br>
+    public int Yas { get; set; }<br>
+}<br><br>
+
+💡 Bu modelde:<br><br>
+💠 Required: Boş bırakılamaz.<br>
+💠 StringLength(50): Maksimum 50 karakter olabilir.<br>
+💠 EmailAddress: Geçerli bir e-posta olup olmadığını kontrol eder.<br>
+💠 Range(18, 60): 18 ile 60 arasında olmasını zorunlu kılar.<br><br>
+
+### 2. Controller'da Doğrulama Kontrolleri
+ModelState.IsValid, modelin doğrulama kurallarına uyup uymadığını kontrol eder.<br><br>
+
+public ActionResult Kaydet(KullaniciModel model)<br>
+{<br>
+    if (ModelState.IsValid)<br>
+    {<br>
+        // Verileri kaydetme işlemi yapılır.<br>
+        return RedirectToAction("Basari");<br>
+    }<br>
+<br>
+    return View(model);<br>
+}<br><br>
+
+💡 ModelState.IsValid: Model doğrulamalarını kontrol eder. Eğer hata varsa form tekrar gösterilir.<br><br>
+
+### 3. View Katmanında Validation Mesajlarını Gösterme
+View tarafında doğrulama mesajlarını göstermek için Html.ValidationMessageFor kullanılır.<br>
+Örnek Kullanım (View - Razor): <br><br>
+
+@model KullaniciModel<br>
+<br>
+<form asp-action="Kaydet" method="post"><br>
+    <label>Ad:</label><br>
+    <input asp-for="Ad" /><br>
+    <span asp-validation-for="Ad" class="text-danger"></span><br>
+<br>
+    <label>Email:</label><br>
+    <input asp-for="Email" /><br>
+    <span asp-validation-for="Email" class="text-danger"></span><br>
+<br>
+    <label>Yaş:</label><br>
+    <input asp-for="Yas" /><br>
+    <span asp-validation-for="Yas" class="text-danger"></span><br>
+<br>
+    <button type="submit">Kaydet</button><br>
+</form><br>
+<br>
+@section Scripts {<br>
+    @await Html.PartialAsync("_ValidationScriptsPartial")<br>
+}<br><br>
+
+💡 <b>Önemli Noktalar:</b><br>
+💠 asp-validation-for="AlanAdi" ile hata mesajlarını görüntüleyebiliriz.<br>
+💠 _ValidationScriptsPartial, istemci tarafında jQuery validation çalıştırır.<br><br>
+
+![image](https://github.com/user-attachments/assets/ec3de70d-9003-493b-bf9d-4167f2e11505)
+<br>
+Models klasörüne gelip Entity klasöründe yer alan Model'e tıklayıp Model1.tt'den TBLKATEGORILER.cs tablosunu seçiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/45546b70-6971-40ca-941c-87c7eb2f6703)
+<br>
+TBLKATEGORILER sayfası bu şekilde çıkmaktadır. Buradan Validation işlemlerimizi yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/250a0c21-3a8d-4ec2-8036-07dd83b6aad7)
+<br>
+Burada KATEGORIAD sütununu boş geçmemek için hemen üzerine Required ekliyoruz. Bunun için using System.ComponentModel.DataAnnotations; kütüphanesini ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/568f7f4d-739b-4bbd-a89f-3142d848ecb0)
+<br>
+Kategori ekleme sayfasına gidiyoruz ve herhangi bir şey yazmadan direkt Kategori Ekle butonuna tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/839ffd0e-a90d-4bb5-9831-7370b1d040e3)
+<br>
+Bu şekilde hata vermektedir. Bunun yerine hata mesajı ekleyebiliriz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 35 - Validation Kontrolleri 2 Required
+
+![image](https://github.com/user-attachments/assets/d2a7c4d5-6d04-4a5a-95b7-6f381fa62a16)
+<br>
+TBLKATEGORILER sayfasına geldik. Burada bir hata mesajı eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/e11d61bf-369d-4a40-9c4c-cd44eee02c4c)
+<br>
+YeniKategori sayfasına gelip birkaç değişiklik yapıyoruz. En üste bir model oluşturuyoruz.<br>
+TextBoxFor ekledikten sonra burada hata mesajını göstermesi için ilk olarak ValidationMessageFor etiketi oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/e4a20729-5068-487a-bd81-c07611502acd)
+<br>
+KategoriController'a gelip HttpPost işlemindeki YeniKategori'ye bir şart belirliyoruz. Burada doğrulanma işlemi yapılmadıysa direkt View kısmından YeniKategori sayfasına döndürecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/9aa2b9a9-eb5f-45a7-8c60-0c5319fa7435)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 36 - StringLength Validation
+
+![image](https://github.com/user-attachments/assets/580c0db6-6dd0-4472-8555-9db9e031d9ec)
+<br>
+TBLMUSTERILER tablosu üzerinden validasyon işlemlerini yapıyoruz. Burada maksimum 50 karakter alabilme özelliğini ekledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/0e4341a9-798b-48a9-bf03-974631ed8544)
+<br>
+
+![image](https://github.com/user-attachments/assets/89eb70d3-597c-4ba9-a42f-c27c9ef3f73e)
+<br>
+
+![image](https://github.com/user-attachments/assets/c62128a7-1dba-4c7c-b5ee-e1451866a42b)
 <br><br>
 
 <hr>
