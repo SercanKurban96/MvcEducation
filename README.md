@@ -547,3 +547,20 @@ Burada listeleme işleminde verilerimizin düzgün bir şekilde gözükmesi içi
 <hr>
 
 # 🖥️ Mvc Ders 14 - Ürünleri Listeleme
+
+KategoriController'da yaptığımız gibi aynı işlemleri bu kez TBLURUNLER için yapıyoruz. Bu kez UrunController oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cd0b93a3-833e-4ae4-9cc8-f89c9fe02a27)
+<br>
+
+![image](https://github.com/user-attachments/assets/549cb996-f161-4e16-9928-fe19e753cc51)
+<br>
+
+![image](https://github.com/user-attachments/assets/3c6d3102-97f6-46d6-a4e3-2f08e06283d2)
+<br>
+Burada KATEGORI sütununda isimler yerine ID değerlerini göstermektedir. İlerleyen zamanlarda bu kısmı değiştiriyor olacağız.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 15 - Müşteri Listeleme
+
