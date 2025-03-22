@@ -881,3 +881,20 @@ DİĞER ÜRÜNLER ismini DİĞER olarak güncelleyelim.<br><br>
 
 <hr>
 
+# 🖥️ Mvc Ders 32 - Müşteri Bilgilerini Güncelleme Sayfasına Taşıma
+
+![image](https://github.com/user-attachments/assets/6de89c75-8eee-4586-8049-12a3b581a4de)
+<br>
+
+![image](https://github.com/user-attachments/assets/86943d2f-c826-4a8f-8fad-52c850313135)
+<br>
+Index sayfasına gidip Güncelleme işleminde Guncelle sayfası yerine MusteriGetir sayfasına gitmesini sağlıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/bce7015d-88a3-4d3b-99b9-c0b05140c709)
+<br>
+
+![image](https://github.com/user-attachments/assets/26cbe62b-a80f-4aa8-8044-85279a681ff8)
+<br><br>
+
+<hr>
+
