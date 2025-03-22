@@ -1060,3 +1060,16 @@ TBLMUSTERILER tablosu üzerinden validasyon işlemlerini yapıyoruz. Burada maks
 
 <hr>
 
+# 🖥️ Mvc Ders 38 - Ürün Kategori Bilgisi Getirme
+
+![image](https://github.com/user-attachments/assets/155010a4-58a4-4e74-99dd-6c64f5fefd8f)
+<br>
+
+![image](https://github.com/user-attachments/assets/1aa90b79-48f0-4cd2-b57d-f87e6bf9e587)
+<br>
+
+![image](https://github.com/user-attachments/assets/a360d1b4-2583-4ed8-83a8-4056e2fe16d1)
+<br><br>
+
+<hr>
+
