@@ -597,3 +597,59 @@ Görünümü bu şekildedir.<br><br>
 <hr>
 
 # 🖥️ Mvc Ders 17 - HttpGet ve HttpPost
+
+## 🧰 HttpGet ve HttpPost Nedir?
+HttpGet ve HttpPost, HTTP protokolünde kullanılan iki temel isteğin (request) türüdür. Web uygulamalarında özellikle ASP.NET Core, MVC ve Web API gibi çerçevelerde sıkça kullanılırlar.<br><br>
+
+### 1. HttpGet Nedir?
+💠 GET isteği, sunucudan veri almak için kullanılır.<br>
+💠 URL ile birlikte sorgu parametreleri (query string) gönderir.<br>
+💠 Idempotenttir, yani aynı GET isteği tekrar tekrar yapıldığında sunucunun durumu değişmez.<br>
+💠 Güvenli (safe) kabul edilir, çünkü sunucuda veri değiştirmez.<br>
+💠 Önbelleğe alınabilir (cacheable), bu nedenle tarayıcı tarafından saklanabilir.<br>
+💠 Veri boyutu kısıtlıdır, URL içinde parametreler taşındığı için uzun URL’ler sorun yaratabilir.<br><br>
+
+### 2. HttpPost Nedir?
+💠 POST isteği, sunucuya veri göndermek ve yeni kayıt oluşturmak için kullanılır.<br>
+💠 İstek gövdesinde (body) veri taşır, bu nedenle büyük veri gönderimine uygundur.<br>
+💠 İdempotent değildir, yani aynı POST isteği tekrar yapıldığında her seferinde yeni bir veri kaydı oluşabilir.<br>
+💠 Önbelleğe alınmaz, çünkü her isteğin sonucu değişebilir.<br><br>
+
+### 🗒️ Ne Zaman Kullanılmalı?
+✅ <b>HttpGet Kullanılmalı:</b><br>
+💠 Veritabanından veri almak için.<br>
+💠 Sayfalama veya filtreleme işlemleri için.<br>
+💠 Önbellek desteğinden yararlanılacak durumlarda.<br><br>
+
+✅ <b>HttpPost Kullanılmalı:</b><br>
+Form verisi veya JSON gibi büyük veri göndermek için.<br>
+Kullanıcı kaydı, sipariş oluşturma gibi işlemlerde.<br>
+Güvenlik açısından hassas verilerin işlenmesi gerektiğinde.<br><br>
+
+![image](https://github.com/user-attachments/assets/8f61b8cd-5706-4c59-9e51-fc536814560b)
+<br>
+YeniKategori isminde bir metot tanımlayıp View oluşturuyoruz. Kategori ekleme işlemi için HttpGet ve HttpPost metotlarını kullanıyoruz. HttpGet işleminde direkt return View yaparken, HttpPost işleminde ise önce TBLKATEGORILER tablosundan bir tane p1 değişkeni oluşturup ardından Add komutunu kullanarak p1 değerini ekliyoruz. Değişiklikleri kaydetmek için SaveChanges kullanıyoruz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 18 - Kategori Ekleme
+
+![image](https://github.com/user-attachments/assets/05a12996-d375-4ecb-b6c8-adb0623e23b9)
+<br>
+YeniKategori sayfasına geliyoruz ve ilk olarak bir form etiketi oluşturuyoruz. Ardından method kısmında ekleme işlemi yaptığımız için post kullanıyoruz.<br>
+Ardından div etiketiyle ayırma işlemi yapıyoruz. Burada etiket adını Kategori Adı olarak belirliyoruz. Veri girişi için input etiketini kullanıp text olarak belirliyoruz. Metin kutusu görünümünü düzgün bir şekilde göstermek için class form-control olarak kullanıyoruz ve name kısmında ise veri tabanımızda yer alan sütunun ismini yazıyoruz.<br>
+Ardından bir daha div oluşturup bu kez buton oluşturuyoruz ve ekleme işlemini gerçekleştiriyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/187e80bc-fcee-4422-80e5-b528c924fe96)
+<br>
+
+![image](https://github.com/user-attachments/assets/9c535942-d460-4e02-9a40-207f0d570ef5)
+<br>
+
+![image](https://github.com/user-attachments/assets/c982db84-ff52-46ff-8bea-b838f41df1ec)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 19 - Müşteri Ekleme
+
