@@ -374,6 +374,8 @@ Veri tabanımızı oluşturduk. Şimdi tablolarımızı oluşturalım.<br><br>
 <br>
 Tablolarımızı bu şekilde oluşturduk.<br><br>
 
+<hr>
+
 # 🖥️ Mvc Ders 8 - Diyagram Ve İlişkiler
 
 ![image](https://github.com/user-attachments/assets/941d48c7-6663-4e09-9b07-3d6a8f39445e)
@@ -386,4 +388,25 @@ Yeni bir diyagram oluşturuyoruz.<br><br>
 TBLKATEGORILER ~ KATEGORIID --> TBLURUNLER ~ URUNKATEGORI<br>
 TBLURUNLER ~ URUNID --> TBLSATISLAR ~ URUN<br>
 TBLMUSTERILER ~ MUSTERIID --> TBLSATISLAR ~ MUSTERI<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 9 - Örnek Veri Girişleri
+
+![image](https://github.com/user-attachments/assets/bd73eae2-05f4-4fda-bad7-a0c52beb22f1)
+<br>
+
+![image](https://github.com/user-attachments/assets/044c51e0-8686-4be8-96c9-d36d66bd29eb)
+<br>
+TBLURUNLER tablosunda küçük bir değişiklik yaptık. Burada MARKA ve STOK isminde iki sütun ekledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/363b580e-3f32-4350-80a0-a9543905d8c9)
+<br>
+
+![image](https://github.com/user-attachments/assets/cc390f9a-9715-4535-bb2f-1913aac59a68)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 10 - Modelin Oluşturulması
 
