@@ -860,3 +860,24 @@ Müşteri Ekleme İşlemi<br><br>
 
 <hr>
 
+# 🖥️ Mvc Ders 31 Kategori Bilgisi Güncelleme
+
+![image](https://github.com/user-attachments/assets/2b3c5ec4-5fb8-49c7-8a00-c64237b01a2a)
+<br>
+Burada Guncelle metodunu oluşturup TBLKATEGORILER tablosuna ait olan p1 değişkenini ekliyoruz.<br>
+Burada ktg değişkenini kullanıp ID değerini bulmak için Find metodunu kullanıyoruz.<br>
+Ardından güncellenecek alanlar hangisiyse onları tek tek yazıyoruz. Burada KATEGORIAD isminde tek bir alan olduğu için ktg değişkenindeki KATEGORIAD ile p1 değişkenindeki KATEGORIAD değerlerini eşitliyoruz.<br>
+Ardından değişiklikleri kaydediyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/75dc5f7b-1bb5-4a99-a630-a523bfe6cd03)
+<br>
+DİĞER ÜRÜNLER ismini DİĞER olarak güncelleyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/a17a0a1f-e151-416b-8590-775c66dcc5c3)
+<br>
+
+![image](https://github.com/user-attachments/assets/60765ef8-4a1a-4767-a423-8d97144b07ab)
+<br><br>
+
+<hr>
+
