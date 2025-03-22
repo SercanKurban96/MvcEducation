@@ -735,3 +735,31 @@ Kategori Seçiniz kısmındaki veriler gelmiş oldu.<br><br>
 
 # 🖥️ Mvc Ders 23 - Yeni Ürün Ekleme
 
+![image](https://github.com/user-attachments/assets/d5c24366-f6a4-4392-85f4-33d47b0f7152)
+<br>
+Burada yeni bir ürün ekleme işlemi gerçekleştirmek için kategoriyi dropdown'dan seçip ekleyeceğiz. LINQ üzerinden gidiyoruz.<br>
+Var türünden ktg isminde bir değişken oluşturup TBLKATEGORILER tablosundan Where şartını yazıyoruz.<br>
+LINQ sorgusundan m isminde bir değişken oluşturup KATEGORIID değeri ile TBLKATEGORILER tablosundaki KATEGORIID değerine eşitlemeye çalıştıktan sonra FirstOrDefault metodunu kullanıyoruz.<br>
+Ardından p1.TBLKATEGORILER değerini ktg değerine atıyoruz.<br>
+En sonda yer alan return View yerine return RedirectToAction kullanıyoruz. RedirectToAction içerisindeki Index ise kaydetme işlemi gerçekleştikten sonra direkt Index sayfasına atayacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/e62f8b8a-7634-438f-804b-5d6d7bde75e3)
+<br>
+Burada küçük bir değişiklik yapıyoruz. En üstte yer alan Models.Entity'den sonra TBLURUNLER, Dropdownlist kısmında ise TBLKATEGORILER.KATEGORIID olarak değiştiriyoruz.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 24 - ID'ye göre Kategori Adı Getirme
+
+UrunController'a ait Index sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/9173e2ef-5175-4dd5-9cc8-0d6728439ca0)
+<br>
+Burada yapacağımız tek değişiklik URUNKATEGORI yerine TBLKATEGORILER.KATEGORIAD ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5be0d2a4-186d-4610-8161-15ef21b8a028)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 25 - Kategori Silme
