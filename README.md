@@ -449,3 +449,68 @@ Modelimiz oluşturuldu.<br><br>
 <hr>
 
 # 🖥️ Mvc Ders 11 - Controller Ve Navbar
+
+Burada Bootstrap Navbar isminde arama yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/61838ba9-fd20-408d-892c-fc6fe705c0a8)
+<br>
+Burada istediğiniz Navbar kullanabilirsiniz. Burada Inverted Navbar olanı kullanacağız. Try it Yourself diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5e7208a9-b285-43cc-be6c-627977a0f695)
+<br>
+Buradaki alanların tümünü kopyalıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7c6e561b-db6b-41ad-8505-e0c90d001f81)
+<br>
+Shared klasörüne sağ tıklayıp Add kısmından View diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d9704d40-0210-413f-9496-8f597ece9fce)
+<br>
+İsmini _MainLayout olarak belirliyoruz ve herhangi bir Layout sayfası kullanmıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/90f77888-fb70-4a4f-9e60-a6a4d37a17d9)
+<br>
+Kopyaladığımız Navbar kodlarını oluşturduğumuz _MainLayout içerisine yapıştırıyoruz.<br><br>
+
+Controller işlemlerine geçiyoruz. Bunun için Controllers klasörüne gelip yeni bir Controller oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/3d31ca67-fea7-445c-8083-228e296329e4)
+<br>
+İsmini KategoriController olarak belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/8108c150-1e3f-429d-b154-c2dd0b791201)
+<br>
+KategoriController oluşturduktan sonra Index'e sağ tıklayıp yeni bir View oluşturuyoruz ve burada _MainLayout sayfasını kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/30864909-d001-465e-b7b1-790656cd7630)
+<br>
+Index oluşturuldu. Çalıştırmayı deneyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/4608d477-c31c-4f17-935a-42d26aa3ba1e)
+<br>
+Karşımıza böyle bir hata çıkmaktadır. Bunun sebebi RenderBody metodu herhangi bir yere çağırılmadı.<br><br>
+
+### 🧰 RenderBody Nedir?
+RenderBody, ASP.NET MVC ve ASP.NET Core MVC projelerinde Layout (Düzen) sayfası içerisinde kullanılan bir yöntemdir.<br>
+RenderBody(), Layout (Master) sayfasında belirlenen bir alana, her bir sayfanın (View'in) içeriğini yerleştirmek için kullanılan bir metottur.<br>
+Bir Layout sayfasında genellikle şunlar bulunur:<br><br>
+
+💠 Sabit içerikler (Header, Footer, Menü vb.)<br>
+💠 Dinamik olarak değişen içerik alanı (RenderBody() burada devreye girer.)<br><br>
+
+![image](https://github.com/user-attachments/assets/b1a10df3-5c9b-434e-930c-5ded2f8aedc6)
+<br>
+_MainLayout sayfasına gittiğimiz zaman container class'ta yer alan bazı metinler bulunmaktadır. Layout işlemlerini burada çağıracağımız için RenderBody() metodunu buraya ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/625d7636-75f1-4107-ae4e-92c96864bff3)
+<br>
+RenderBody metodunu buraya eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/9eea0a10-24fa-40ec-9dda-d19a8f4d1d88)
+<br>
+Tekrardan Index üzerinden çalıştırdığımız zaman karşımıza bu şekilde çıkmış oldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 12 - Menüyü Türkçeleştirme
+
