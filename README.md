@@ -355,4 +355,35 @@ Bu bölümde herhangi bir veri tabanı kullanmadan statik olarak alanlarımızı
 <hr>
 
 # 🖥️ Mvc Ders 7 - Ürün Stok Projesi Db ve Tablo Oluşturma
+Bu bölümde yeni bir veri tabanı oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/241747b4-f16e-4b2f-bbe6-8a1bf55458cf)
+<br>
+Veri tabanımızı oluşturduk. Şimdi tablolarımızı oluşturalım.<br><br>
+
+![image](https://github.com/user-attachments/assets/783904a5-3394-4489-82bf-bda4bab0bad3)
+<br>
+
+![image](https://github.com/user-attachments/assets/592be3bd-2b5b-4f12-bfce-5a717db365b1)
+<br>
+
+![image](https://github.com/user-attachments/assets/9b1c6f20-b462-416e-8e52-f430930bab3e)
+<br>
+
+![image](https://github.com/user-attachments/assets/eca2b5cd-018f-4004-8820-2d583d6e77d3)
+<br>
+Tablolarımızı bu şekilde oluşturduk.<br><br>
+
+# 🖥️ Mvc Ders 8 - Diyagram Ve İlişkiler
+
+![image](https://github.com/user-attachments/assets/941d48c7-6663-4e09-9b07-3d6a8f39445e)
+<br>
+Yeni bir diyagram oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/3d9fb5c3-f0a7-4cae-ae2e-ccccc331f817)
+<br>
+İlişkili Diyagramlar bu şekilde olacaktır;<br>
+TBLKATEGORILER ~ KATEGORIID --> TBLURUNLER ~ URUNKATEGORI<br>
+TBLURUNLER ~ URUNID --> TBLSATISLAR ~ URUN<br>
+TBLMUSTERILER ~ MUSTERIID --> TBLSATISLAR ~ MUSTERI<br><br>
 
