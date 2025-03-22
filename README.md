@@ -414,3 +414,38 @@ TBLURUNLER tablosunda küçük bir değişiklik yaptık. Burada MARKA ve STOK is
 <br>
 Yeni bir proje oluşturuyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/57b9aa86-020d-4b66-a7d7-c5b3b0d6afef)
+<br>
+Models klasörüne sağ tıklayıp Entity isminde yeni bir klasör oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d71cb1b2-a88b-478d-95de-d95841eed4f0)
+<br>
+Entity klasörüne sağ tıklayıp Add kısmından New Item diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d177ecea-aa5a-4f19-b0db-7aa946c9179f)
+<br>
+Sol tarafta yer alan Data seçeneğini seçip ADO.NET Entity Data Model diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/0c05543a-17f4-48f2-b7c5-7e1cb89dd874)
+<br>
+Next diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d5713e7e-6461-496c-9289-52cb0f6983b8)
+<br>
+Veri tabanımızı seçiyoruz ve OK diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/8dc6a3d5-6e3c-40f7-9c34-7c5a5b9bef0c)
+<br>
+Next diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/767134d1-c930-4dda-a277-80b9fce4a679)
+<br>
+Tablodaki bütün alanları seçtikten sonra Finish diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cd1e0e19-e38b-4ea7-97a6-54515fcda9af)
+<br>
+Modelimiz oluşturuldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 11 - Controller Ve Navbar
