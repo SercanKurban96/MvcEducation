@@ -1047,3 +1047,16 @@ TBLMUSTERILER tablosu üzerinden validasyon işlemlerini yapıyoruz. Burada maks
 
 <hr>
 
+# 🖥️ Mvc Ders 37 - Ürün Bilgilerini Taşıma
+
+![image](https://github.com/user-attachments/assets/2397d9cf-5e2b-48e7-a61c-18b6dc677525)
+<br>
+
+![image](https://github.com/user-attachments/assets/e13dc1c3-9682-4fb6-88ef-294b385d5293)
+<br>
+
+![image](https://github.com/user-attachments/assets/65cd3af4-213f-443e-b70d-33c1907e31cb)
+<br><br>
+
+<hr>
+
