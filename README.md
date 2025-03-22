@@ -1006,7 +1006,7 @@ Kategori ekleme sayfasına gidiyoruz ve herhangi bir şey yazmadan direkt Katego
 
 ![image](https://github.com/user-attachments/assets/839ffd0e-a90d-4bb5-9831-7370b1d040e3)
 <br>
-Bu şekilde hata vermektedir. Bunun yerine hata mesajı verebiliriz.<br><br>
+Bu şekilde hata vermektedir. Bunun yerine hata mesajı ekleyebiliriz.<br><br>
 
 <hr>
 
