@@ -410,3 +410,7 @@ TBLURUNLER tablosunda küçük bir değişiklik yaptık. Burada MARKA ve STOK is
 
 # 🖥️ Mvc Ders 10 - Modelin Oluşturulması
 
+![image](https://github.com/user-attachments/assets/acfb4a67-3a1d-4683-bd98-e7fad48c7fa0)
+<br>
+Yeni bir proje oluşturuyoruz.<br><br>
+
