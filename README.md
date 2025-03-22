@@ -1073,3 +1073,48 @@ TBLMUSTERILER tablosu üzerinden validasyon işlemlerini yapıyoruz. Burada maks
 
 <hr>
 
+# 🖥️ Mvc Ders 39 - Ürün Güncelleme ~ 1
+
+![image](https://github.com/user-attachments/assets/30aecede-f57d-44f1-9392-0473008e82ac)
+<br>
+
+![image](https://github.com/user-attachments/assets/42158f4a-e115-4749-a1dd-437aa4db0355)
+<br>
+Güncelleme işleminde URUNKATEGORI kısmı normalde smallint değerindedir. Burada ekleme işlemi yaptığımız zaman ürüne ait kategori seçerken bize metinsel ifade olarak göstermektedir, ancak güncelleme işleminde direkt ID değerine göre aldığımız zaman, burada kategoriyi değiştireceğimiz zaman bize hata döndürecektir, ancak diğer değerleri güncelleyecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/815ba0d7-41a5-40a1-99fa-9a6baa88a955)
+<br>
+Hata ekranı bu şekildedir. Hatanın önüne geçebilmek için SQL'e gelip URUNKATEGORI değerini tekrardan girmemiz gerekmektedir.<br>
+Bir sonraki kısımda doğru kullanım gösterilecektir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 40 - Ürün Güncelleme ~ 2
+
+![image](https://github.com/user-attachments/assets/56dff83f-dc6a-4aa9-9988-0235b4e7fdb4)
+<br>
+
+![image](https://github.com/user-attachments/assets/b1bb8c54-b490-4523-a593-01f49458d4a3)
+<br>
+LCD ürünün kategorisini BEYAZ EŞYA yerine DİĞER ÜRÜNLER olarak güncelleyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/9453e2c4-e1da-4882-b81b-fdbf1892e682)
+<br>
+
+![image](https://github.com/user-attachments/assets/159ee6d1-6e01-4dd8-b57f-26aa69059402)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 41 - Ürün Validation Kontrolleri
+
+![image](https://github.com/user-attachments/assets/5c389d72-aa8e-498d-b598-1a996a6774ba)
+<br>
+Burada Entity kısmından Models'e ait TBLURUNLER sayfasından validasyon işlemleri yerine direkt YeniUrun sayfasına gelip HTML'ye ait olan validasyon işlemlerini uyguladık.<br><br>
+
+![image](https://github.com/user-attachments/assets/33d35931-09a0-480b-816a-e2f1da392b05)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 42 - Sayfalama (Paging)
