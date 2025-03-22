@@ -278,4 +278,65 @@ Bilgi sekmesi karşımıza bu şekilde çıkmış oldu.<br><br>
 
 <hr>
 
+# 🖥️ MVC Ders 5 - Statik Web Projesi ~ 1
+
+Tema Linki: https://disk.yandex.com.tr/d/UPFpSA0fMGODIw <br><br>
+
+![image](https://github.com/user-attachments/assets/f0012f2a-fc1a-44cb-a35e-820169faf494)
+<br>
+Kullanacağımız şablon bu şekilde olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/7587c0d9-536f-44d7-9840-993306060d40)
+<br>
+Yeni bir MVC projesi oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/b86c8e96-ec0d-4282-87e9-8274c2252f09)
+<br>
+Projeyi oluşturduktan sonra linkteki dosyaları çıkartıyoruz. Çıkartılan web klasörünü tutup katmanımıza sürüklüyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/725edf5b-8da4-4004-8ca2-da32556abc8a)
+<br>
+Ardından yeni bir Controller oluşturuyoruz. Burada varsayılan isim DefaultController olarak çıkacaktır. Burada istediğiniz ismi verebilirsiniz.<br><br>
+
+![image](https://github.com/user-attachments/assets/179d0ffa-6d41-4eeb-b6d5-67e3c464221e)
+<br>
+Index'e sağ tıklayıp Add View diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d0a5da66-230d-48dc-b1f8-881d5d0c46de)
+<br>
+Burada herhangi bir Layout kullanmıyoruz, çünkü burası bizim direkt Layout sayfamız olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/e2c065f3-ad01-48bb-9f18-ab1a24efce0d)
+<br>
+İndirdiğimiz web klasörüne gelip index.html sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/8ca1d2c3-aeb4-43f6-b31c-4b32776097fd)
+<br>
+Buradaki bütün alanları kopyalayıp oluşturduğumuz Index'e ait olan view'e yapıştırıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/738676f6-dc15-4730-bcaf-59e2bd0e95e6)
+<br>
+Index sayfamızdaki tüm kodları bu şekilde yapıştırıyoruz. En üstte yer alan Layout = null kısmına dokunmuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/101ca799-cd55-43a5-a849-c2f99e8abebd)
+<br>
+Projeyi çalıştırdıktan sonra şablondaki görüntüler gelmeyecektir. Bunun nedeni CSS yolunu görememektedir. Şimdi CSS yollarını belirliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/df5d421c-5069-4c28-a8cd-b464248d4393)
+<br>
+Burada çıkartılan klasörün ismi hangisiyse onu yazıyoruz. İlk olarak başına ~ (ALT GR + Ü) işaretini koyuyoruz ve ardından / (SHIFT + 7) işaretini koyuyoruz. Ardından klasörümüzün ismi hangisiyse onu yazıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e194ecd8-efa7-40be-af4a-40d782d73821)
+<br>
+Aynı şekilde img gördüğünüz dosyaları da bu şekilde uyguluyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7a76ed8c-323a-4d62-89ca-fb85769fd685)
+<br>
+Script dosyalarına da aynısını uyguluyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a280ee1e-93cb-4f9d-9395-bce607e3162f)
+<br>
+
+![image](https://github.com/user-attachments/assets/33c6036a-5322-4e02-9de3-dd2045bbab12)
+<br><br>
 
