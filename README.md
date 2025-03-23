@@ -1118,3 +1118,95 @@ Burada Entity kısmından Models'e ait TBLURUNLER sayfasından validasyon işlem
 <hr>
 
 # 🖥️ Mvc Ders 42 - Sayfalama (Paging)
+
+⚠️ Sayfalama işleminden önce bir not: ? ile ?? ne işe yarar?<br><br>
+
+C#'ta ? ve ?? operatörleri, null değerlerle çalışırken kullanılan önemli operatörlerdir.<br>
+### 1. ? (Nullable Tip Tanımlama)
+? operatörü, bir değer tipinin (int, double, bool vb.) nullable (null alabilir) versiyonunu oluşturmak için kullanılır.<br>
+Örnek:<br><br>
+
+int? sayi = null; // Nullable int<br>
+double? ondalikliSayi = 3.14; // Nullable double<br>
+bool? durum = null; // Nullable bool<br><br>
+
+<b>Açıklama:</b><br><br>
+Normalde int, double, bool gibi değer tipleri null alamaz.<br>
+int? gibi bir tanımlama yaparak null değer atayabiliriz.<br>
+Nullable<T> ile aynı anlama gelir, yani int? aslında Nullable<int> ile aynıdır.<br><br>
+
+<b>Null Kontrolü Yapma</b><br><br>
+Bir nullable değişkenin değerinin olup olmadığını kontrol etmek için .HasValue ve .Value kullanılabilir:<br><br>
+
+int? yas = 25;<br>
+if (yas.HasValue)<br>
+    Console.WriteLine($"Yaş: {yas.Value}");<br>
+else<br>
+    Console.WriteLine("Yaş belirtilmedi.");<br><br>
+
+### 2. ?? (Null Coalescing - Null Birleştirme Operatörü)
+?? operatörü, bir değişken null ise varsayılan bir değer atamak için kullanılır.<br>
+Örnek:<br><br>
+
+int? sayi = null;<br>
+int sonuc = sayi ?? 100; // Eğer sayi null ise 100 atanır<br>
+Console.WriteLine(sonuc); // Çıktı: 100<br><br>
+
+<b>Açıklama:</b><br><br>
+sayi ?? 100 ifadesinde sayi değişkeni null değilse kendi değerini kullanır, eğer null ise 100 atanır.<br><br>
+
+![image](https://github.com/user-attachments/assets/6ec8e3e0-408c-4c58-ad34-6b3619bf633e)
+<br>
+Bu operatörler özellikle veri tabanı işlemleri, form kontrolleri, nullable değerlerle çalışırken oldukça faydalıdır.<br><br>
+
+## Sayfalama İşlemi
+İlk olarak katmanımıza sağ tıklayıp Manage NuGet Packages diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e78fa461-2bf1-4391-9d72-cd4b07c7cc36)
+<br>
+İndireceğimiz paket PagedList.Mvc olacaktır.<br><br>
+
+KategoriController'a gelelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/aa65b173-4b6c-4377-b4da-54f357e05a23)
+<br>
+Burada using PagedList ve PagedList.Mvc adında iki tane kütüphane ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/dc4efcfb-3076-41d6-9cb6-3d0979b81a9f)
+<br>
+Burada listeleme işlemine geldiğimizde ToList metodundan sonra ToPagedList metodunu ekliyoruz. Buradaki birinci değer sayfanın başlangıcı, ikinci değer ise her sayfada kaç adet olduğunu belirtir.<br><br>
+
+![image](https://github.com/user-attachments/assets/3c04fe86-25ab-43cd-ae40-63164ec8239c)
+<br>
+Index üzerinden çalıştırdığımız zaman bize hata verecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/1c695973-b0dc-4842-8dfb-25080a505a74)
+<br>
+Index'te en üstte oluşturduğumuz @model kısmını PagedList.IPagedList olarak değiştiriyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c3e5879c-2784-4ed2-9b3b-3c6176da9553)
+<br>
+Index üzerinden çalıştırdığımızda 4'e kadar olan değerleri göstermesini sağladık, ancak burada sayfalama işlemini henüz tamamlamadık.<br><br>
+
+![image](https://github.com/user-attachments/assets/b8c02ea6-490c-4598-b17f-c66adf978fe3)
+<br>
+Tekrar Index'e gelip en üst tarafa iki tane daha kütüphane ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/2db990b6-4076-454f-98a6-b771688cc244)
+<br>
+Burada bir değişiklik daha yaptık. ActionResult Index'ten sonra içerisine int türünden sayfa isminde bir değişken tanımlayıp 1'den başlattık. Tekrardan Index'e dönelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/aaadaeda-95fd-47f5-a63d-abd32502eb4b)
+<br>
+Index sayfasında en altın bir üstüne gelip Html parametrelerinden biri olan PagedListPager ekliyoruz.<br>
+İkinci parantezin içerisinde IPagedList ekliyoruz. IPagedList yukarıda tanımlamış olduğumuz Model değeri olarak kullanacağımız alandır.<br>
+KategoriController'da yer alan Index'te tanımlamış olduğumuz sayfa değişkenini buraya ekliyoruz.<br>
+Ardından Lambda Expression kullanarak Url.Action ile yönlendiriyoruz.<br>
+Birinci parametre Index'e yönlendirmesini, ikinci parametre ise new oluşturup sayfa değişkenini ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4952fdbc-54a6-4c18-b3ba-0e47d2fd527e)
+<br>
+Çalıştırdıktan sonra sayfalama işlemi bu şekilde tamamlandı.<br><br>
+
+<hr>
+
