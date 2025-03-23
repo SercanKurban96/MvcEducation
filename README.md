@@ -1252,3 +1252,14 @@ Silme işlemi ALERT üzerinden bu şekilde yapıldı.<br><br>
 
 <hr>
 
+# 🖥️ Mvc Ders 45 - Popup Modal Kullanımı
+
+Yeni bir Controller oluşturalım ve ismini SatisController olarak belirleyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/640b8980-ee4a-4eec-acae-296a42a8d554)
+<br>
+Ardından bir View oluşturalım ve bağlantı adresini _MainLayout üzerinden verelim.<br><br>
+
+Index'e geldiğimizde ilk butona class atamasından sonra data-toggle ekliyoruz, data-toggle başlığı belirtir. Geçişi modal olacaktır.<br>
+Ardından data-target ise bunun hedefini gösterir. İsmini #Modal1 olarak belirliyoruz.<br>
+
