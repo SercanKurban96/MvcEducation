@@ -266,7 +266,7 @@ Layout sayfamız hazır. Add diyoruz ve biraz bekliyoruz.<br><br>
 
 ![image](https://github.com/user-attachments/assets/7c230361-67ea-4b97-8b49-f7d986c5badc)
 <br>
-Bilgi sayfası bu şekilde gelmiş oldu.<br><br>
+Bilgi sayfası bu şekilde gelmiş oldu. Controller üzerinden Bilgi sayfasını görüntüleyebilmek için ActionResult kısmından Bilgi ismine sağ tıklayıp Go To View diyoruz.<br><br>
 
 ![image](https://github.com/user-attachments/assets/f39b5fa5-9c8d-461b-89d4-b83b4d1300a8)
 <br>
@@ -1210,3 +1210,21 @@ Birinci parametre Index'e yönlendirmesini, ikinci parametre ise new oluşturup 
 
 <hr>
 
+# 🖥️ Mvc Ders 43 - Alert Kullanımı
+
+MusteriController için bir örnek yapalım. YeniMusteri sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c146c42d-6462-4ab0-80c3-3d7b5b6c19e8)
+<br>
+Burada oluşturduğumuz YENİ MÜŞTERİ EKLE butonunda yer alan class işleminden sonra bir tane id ekliyoruz, burada istediğiniz ismi verebilirsiniz. Örnek olarak ismini btn1 olarak belirledik.<br>
+Ardından </form> etiketinden önce <script> etiketini açıyoruz ve içerisine $ işaretini ekliyoruz.<br>
+Ardından # işaretini ekledikten sonra tanımladığımız id değerini yazıp click metodunu ekliyoruz, ardından function ekliyoruz.<br>
+Burada alert dedikten sonra mesaj vermesini sağlıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/fd7d1830-d87a-4369-b86f-c45777c70e79)
+<br>
+Müşteri ekleme işlemi yaptıktan sonra mesajı göstermiş oldu.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 44 - Alert ile Silme
