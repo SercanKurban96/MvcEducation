@@ -1260,6 +1260,52 @@ Yeni bir Controller oluşturalım ve ismini SatisController olarak belirleyelim.
 <br>
 Ardından bir View oluşturalım ve bağlantı adresini _MainLayout üzerinden verelim.<br><br>
 
+![image](https://github.com/user-attachments/assets/3303d074-b37d-4c17-bf68-c4a6ad745bad)
+<br>
 Index'e geldiğimizde ilk butona class atamasından sonra data-toggle ekliyoruz, data-toggle başlığı belirtir. Geçişi modal olacaktır.<br>
-Ardından data-target ise bunun hedefini gösterir. İsmini #Modal1 olarak belirliyoruz.<br>
+Ardından data-target ise bunun hedefini gösterir. İsmini #Modal1 olarak belirliyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/3dd0662d-f619-4d69-8051-64bee340a520)
+<br>
+Button tanımlamasından sonra div etiketleri içerisine ilk olarak modal isminde bir class tanımlıyoruz ve id değerini butonda tanımladığımız id değerini yazıyoruz.<br>
+Ardından ikinci div etiketinde bir tane modal-dialog oluşturuyoruz.<br>
+Üçüncü div etiketinde modal-content ile içeriğini oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c2ab7fd2-7dbd-495f-8246-9825e6a4a91b)
+<br>
+Satış Yap butonuna tıkladığımızda ekran karardı, ancak içerisine herhangi bir şey yazmadık.<br><br>
+
+![image](https://github.com/user-attachments/assets/fbc2c6d7-afdb-469b-bf60-5976b836ac4e)
+<br>
+Burada modal-content tanımladıktan sonra modal-header ekleyerek bir başlık belirledik.<br>
+Ardından başlık için h2 etiketini kullanarak modal-title oluşturduk ve ismini Satış Yapma Ekranı olarak belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/a17a9442-207a-451a-a3bf-7f54b809a3d7)
+<br>
+Butona bastığımızda karşımıza bu şekilde çıkmış oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/02f98999-cc52-4220-ab14-0ba6db818a50)
+<br>
+Satış Yapma Ekranı başlığındaki div etiketinden hemen sonra bir tane form etiketi oluşturduk.<br>
+Burada bir tane div tanımlaması yapıp modal-body oluşturduk.<br>
+Ardından label etiketine Ürün Adı ismini vermiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/075b7eaf-5b46-4e6e-b51a-0c721f3eb9a4)
+<br>
+Butona bastığımızda karşımıza bu şekilde çıkmış oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/33cfe234-28c5-4941-9c91-5bf06833f0d2)
+<br>
+Ürün Adı için bir tane TextBox ataması yapıyoruz. Burada input type türüne text, name kısmına geçici olarak Urun, class ise form-control olarak belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/c8d6cbeb-2195-42d2-ac77-7f44c3d51849)
+<br>
+Butona bastığımızda artık TextBox eklenmiş oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/b84b017b-b401-483e-9ab2-fab84f10ab1d)
+<br>
+
+![image](https://github.com/user-attachments/assets/d1f6b758-1222-4722-87d5-77b0e6ad03fa)
+<br><br>
+
+<hr>
