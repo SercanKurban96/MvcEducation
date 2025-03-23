@@ -1228,3 +1228,27 @@ Müşteri ekleme işlemi yaptıktan sonra mesajı göstermiş oldu.<br><br>
 <hr>
 
 # 🖥️ Mvc Ders 44 - Alert ile Silme
+
+MusteriController üzerinden devam edelim. Index sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/1893014e-7aef-4afa-9215-a8f6f884ad81)
+<br>
+Burada ALERT isminde bir tane daha sütun ekledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/a6a0ef20-1568-4f64-813f-c3ad9ca87757)
+<br>
+Ardından ALERT sütununa karşılık gelen değeri yazdık.<br>
+Burada SİL BUTONU üzerinde yazacak olan değer, SİL ActionResult değerini, new değerinde ise id değeriyle birlikte MUSTERIID'yi taşıyacaktır.<br>
+Ardından butona bir class ataması yapıyoruz.<br>
+Burada onclick komutu ise tıkladıktan sonra evet/hayır penceresi gelecektir, ardından return confirm işleminde bize bir mesaj gösterecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/fc39fc3d-c38c-426c-9274-68910051f390)
+<br>
+ID 7 değerini silmek istediğimiz zaman uyarı penceresi gelecektir. Tamam diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5718ddb8-c780-479e-854e-fd6136284cc3)
+<br>
+Silme işlemi ALERT üzerinden bu şekilde yapıldı.<br><br>
+
+<hr>
+
