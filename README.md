@@ -1340,3 +1340,66 @@ SQL veriye kaydedildi.<br><br>
 
 <hr>
 
+# 🖥️ Mvc Ders 47 - Popup Modal Vazgeç Seçeneği
+
+![image](https://github.com/user-attachments/assets/19af35d2-adf6-4405-a5c8-dfc6c9b3d9f1)
+<br>
+Index sayfasının en altında yer alan Satış İşlemini Yap butonuna bir tane type ekliyoruz ve submit olarak belirliyoruz. Submit işleminin tamamlanacağı anlamına gelir.<br>
+Vazgeç işleminde ise ilk olarak type türünü button olarak belirledik. Burada vazgeçme işlemi için data-dismiss komutunu kullandık. Vazgeçmek, iptal etmek anlamında kullanılır.<br><br>
+
+![image](https://github.com/user-attachments/assets/b9fe3fef-1c0b-45dd-a61c-a93a4fe3bb64)
+<br>
+Vazgeç butonuna bastığımız zaman veriyi eklemeyecektir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 48 - Arama Paneli
+
+MusteriController üzerinden işlemlerimizi yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/f6a33b6c-a3e9-4615-a46a-1e079db9befa)
+<br>
+Burada Index içerisindeki parametreyi string olarak belirleyip p isminde bir değişken oluşturduk.<br>
+Ardından bir tane LINQ sorgusu oluşturduk.<br>
+Daha sonra geriye değer döndürme işlemini uygulamış olduk. Index sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/59b50341-54e7-46d8-a706-13027d39a20d)
+<br>
+Burada Html BeginForm oluşturarak Action ismini, Controller ismini yazdıktan sonra arama işlemi için Post yerine Get metodu kullanıyoruz.<br>
+Ardından bir tane p etiketi açarak buraya bir metin ekliyoruz. Ekledikten sonra burada Html parametresini kullanarak TextBox olarak belirliyoruz ve içerisine "p" olarak ekliyoruz. Buradaki "p" Controller'da string olarak tanımladığımız p değişkenidir.<br>
+Bir tane buton ekliyoruz ve type türüne submit olarak belirliyoruz. Value değeri butonda gözükecek olan isimdir.<br><br>
+
+![image](https://github.com/user-attachments/assets/9fb80b20-e25c-4df2-bfe9-006431ebb419)
+<br>
+
+Burada herhangi bir müşterinin ismini aradığımız zaman bize herhangi bir sonuç döndürmeyecektir. Bunun için tekrardan MusteriController'a gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/05e61690-82c0-45cd-a0bd-b50e43fa256c)
+<br>
+Burada var degerler olarak tanımladığımız LINQ sorgusundan sonra bir tane if şartı yazıyoruz. Bu şart, eğer gireceğimiz değer boş olmama durumunu kontrol etmektedir.<br>
+Eğer arama çubuğuna yazacağımız değer boş olmazsa burada bir tane Where şartı yazıyoruz. Buradaki şart MUSTERIAD sütununda yer alan isimler, arama çubuğuna yazdığımız değeri içeriyorsa işlemi gerçekleştireceği anlamına gelmektedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/9d84342c-e4c9-4d0d-87f7-d2731b18d0c1)
+<br>
+EMEL yazdığımız zaman EMEL ismindeki müşterileri getirecektir. Sadece E yazarsak içerisinde E harfi geçen müşterileri getirecektir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 49 - Datatable Jquery Eklentisi (Paging & Search)
+
+Burada bir tane DataTable ekleyeceğiz. Bu eklenti sayesinde arama panelini veya sayfalama işlemini uzun uzun yapmak yerine tamamını tek bir eklenti üzerinden çok kolay bir şekilde yapabiliriz.<br>
+Bunun için katmanımıza sağ tıklayarak Manage NuGet Packages diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/606c99d5-ff41-4286-b456-2f278dbb570d)
+<br>
+Burada ekleyeceğimiz paketin ismi jquery.datatables olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/93dbef90-17b0-4240-b7b9-e54c95c8895e)
+<br>
+Paket kurulduktan sonra Content klasöründe yer alan DataTables klasörü oluşturuldu.<br><br>
+
+UrunController'dan Index sayfasına gidiyoruz.<br><br>
+
+Burada ilk olarak oluşturduğumuz table etiketi içerisine bir tane id ekliyoruz ve ismini tbl1 olarak belirliyoruz.<br>
+Ardından oluşturduğumuz tr etiketleri içerisine thead etiketini ekleyerek tüm başlıkları tek bir çatı altında topluyoruz.<br>
+❗ 
