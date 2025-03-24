@@ -1423,7 +1423,9 @@ Burada en alta bir tane script oluşturup table etiketinde verdiğimiz id değer
 
 ![image](https://github.com/user-attachments/assets/02584a52-e64c-469c-9179-5b78916495d9)
 <br>
-DataTable görünümü bu şekildedir. Sol üst köşede yer alan entries per page kısmına gelip her bir sayfada kaç tane eleman sayısını gösterecektir. Burada başlangıçta 10 tane gösterdikten sonra yeni bir sayfaya gidecektir. Altında da hemen bir arama çubuğu bulunmaktadır.<br><br>
+DataTable görünümü bu şekildedir. Sol üst köşede yer alan entries per page kısmına gelip her bir sayfada kaç tane eleman sayısını gösterecektir. Burada başlangıçta 10 tane gösterdikten sonra yeni bir sayfaya gidecektir. Altında da hemen bir arama çubuğu bulunmaktadır. Arama çubuğunda herhangi bir harfe bastığımızda ilgili veriyi gösterecektir.<br><br>
 
 <hr>
+
+# 🖥️ Mvc Ders 50 - Final
 
