@@ -1309,3 +1309,34 @@ Butona bastığımızda artık TextBox eklenmiş oldu.<br><br>
 <br><br>
 
 <hr>
+
+# 🖥️ Mvc Ders 46 - Popup Modal Üzerine Satış Ekleme
+
+![image](https://github.com/user-attachments/assets/68a30933-a6d1-4529-b676-fe40830ecb56)
+<br>
+Örnek bir satış verisi...<br><br>
+
+![image](https://github.com/user-attachments/assets/ac1bc35f-10c6-4085-a785-8d2b0cc7f26a)
+<br>
+
+Index üzerinden devam ediyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cd3317b6-d5a6-428d-aeaf-dc11caef9c78)
+<br>
+En üstte modeli oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a316a8a6-1e32-406c-bcf0-c3b5739f9061)
+<br>
+Burada form etiketinden sonra verileri eklemek için method işlemini post olarak belirliyoruz.<br>
+Ardından action işleminde ise Controller'a ait olanı (Satis) ve oluşturduğumuz ekleme işlemi olan YeniSatis'a yönlendiriyoruz.<br>
+Kalan işlemleri ise input yerine Html parametrelerini kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a2bf4cc8-fcc1-4b40-a65d-016b77014895)
+<br>
+
+![image](https://github.com/user-attachments/assets/fe2f8e4e-3e1c-4522-9d44-bfb2c319eca8)
+<br>
+SQL veriye kaydedildi.<br><br>
+
+<hr>
+
