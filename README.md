@@ -1260,6 +1260,173 @@ Yeni bir Controller oluşturalım ve ismini SatisController olarak belirleyelim.
 <br>
 Ardından bir View oluşturalım ve bağlantı adresini _MainLayout üzerinden verelim.<br><br>
 
+![image](https://github.com/user-attachments/assets/3303d074-b37d-4c17-bf68-c4a6ad745bad)
+<br>
 Index'e geldiğimizde ilk butona class atamasından sonra data-toggle ekliyoruz, data-toggle başlığı belirtir. Geçişi modal olacaktır.<br>
-Ardından data-target ise bunun hedefini gösterir. İsmini #Modal1 olarak belirliyoruz.<br>
+Ardından data-target ise bunun hedefini gösterir. İsmini #Modal1 olarak belirliyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/3dd0662d-f619-4d69-8051-64bee340a520)
+<br>
+Button tanımlamasından sonra div etiketleri içerisine ilk olarak modal isminde bir class tanımlıyoruz ve id değerini butonda tanımladığımız id değerini yazıyoruz.<br>
+Ardından ikinci div etiketinde bir tane modal-dialog oluşturuyoruz.<br>
+Üçüncü div etiketinde modal-content ile içeriğini oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c2ab7fd2-7dbd-495f-8246-9825e6a4a91b)
+<br>
+Satış Yap butonuna tıkladığımızda ekran karardı, ancak içerisine herhangi bir şey yazmadık.<br><br>
+
+![image](https://github.com/user-attachments/assets/fbc2c6d7-afdb-469b-bf60-5976b836ac4e)
+<br>
+Burada modal-content tanımladıktan sonra modal-header ekleyerek bir başlık belirledik.<br>
+Ardından başlık için h2 etiketini kullanarak modal-title oluşturduk ve ismini Satış Yapma Ekranı olarak belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/a17a9442-207a-451a-a3bf-7f54b809a3d7)
+<br>
+Butona bastığımızda karşımıza bu şekilde çıkmış oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/02f98999-cc52-4220-ab14-0ba6db818a50)
+<br>
+Satış Yapma Ekranı başlığındaki div etiketinden hemen sonra bir tane form etiketi oluşturduk.<br>
+Burada bir tane div tanımlaması yapıp modal-body oluşturduk.<br>
+Ardından label etiketine Ürün Adı ismini vermiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/075b7eaf-5b46-4e6e-b51a-0c721f3eb9a4)
+<br>
+Butona bastığımızda karşımıza bu şekilde çıkmış oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/33cfe234-28c5-4941-9c91-5bf06833f0d2)
+<br>
+Ürün Adı için bir tane TextBox ataması yapıyoruz. Burada input type türüne text, name kısmına geçici olarak Urun, class ise form-control olarak belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/c8d6cbeb-2195-42d2-ac77-7f44c3d51849)
+<br>
+Butona bastığımızda artık TextBox eklenmiş oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/b84b017b-b401-483e-9ab2-fab84f10ab1d)
+<br>
+
+![image](https://github.com/user-attachments/assets/d1f6b758-1222-4722-87d5-77b0e6ad03fa)
+<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 46 - Popup Modal Üzerine Satış Ekleme
+
+![image](https://github.com/user-attachments/assets/68a30933-a6d1-4529-b676-fe40830ecb56)
+<br>
+Örnek bir satış verisi...<br><br>
+
+![image](https://github.com/user-attachments/assets/ac1bc35f-10c6-4085-a785-8d2b0cc7f26a)
+<br>
+
+Index üzerinden devam ediyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cd3317b6-d5a6-428d-aeaf-dc11caef9c78)
+<br>
+En üstte modeli oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a316a8a6-1e32-406c-bcf0-c3b5739f9061)
+<br>
+Burada form etiketinden sonra verileri eklemek için method işlemini post olarak belirliyoruz.<br>
+Ardından action işleminde ise Controller'a ait olanı (Satis) ve oluşturduğumuz ekleme işlemi olan YeniSatis'a yönlendiriyoruz.<br>
+Kalan işlemleri ise input yerine Html parametrelerini kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a2bf4cc8-fcc1-4b40-a65d-016b77014895)
+<br>
+
+![image](https://github.com/user-attachments/assets/fe2f8e4e-3e1c-4522-9d44-bfb2c319eca8)
+<br>
+SQL veriye kaydedildi.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 47 - Popup Modal Vazgeç Seçeneği
+
+![image](https://github.com/user-attachments/assets/19af35d2-adf6-4405-a5c8-dfc6c9b3d9f1)
+<br>
+Index sayfasının en altında yer alan Satış İşlemini Yap butonuna bir tane type ekliyoruz ve submit olarak belirliyoruz. Submit işleminin tamamlanacağı anlamına gelir.<br>
+Vazgeç işleminde ise ilk olarak type türünü button olarak belirledik. Burada vazgeçme işlemi için data-dismiss komutunu kullandık. Vazgeçmek, iptal etmek anlamında kullanılır.<br><br>
+
+![image](https://github.com/user-attachments/assets/b9fe3fef-1c0b-45dd-a61c-a93a4fe3bb64)
+<br>
+Vazgeç butonuna bastığımız zaman veriyi eklemeyecektir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 48 - Arama Paneli
+
+MusteriController üzerinden işlemlerimizi yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/f6a33b6c-a3e9-4615-a46a-1e079db9befa)
+<br>
+Burada Index içerisindeki parametreyi string olarak belirleyip p isminde bir değişken oluşturduk.<br>
+Ardından bir tane LINQ sorgusu oluşturduk.<br>
+Daha sonra geriye değer döndürme işlemini uygulamış olduk. Index sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/59b50341-54e7-46d8-a706-13027d39a20d)
+<br>
+Burada Html BeginForm oluşturarak Action ismini, Controller ismini yazdıktan sonra arama işlemi için Post yerine Get metodu kullanıyoruz.<br>
+Ardından bir tane p etiketi açarak buraya bir metin ekliyoruz. Ekledikten sonra burada Html parametresini kullanarak TextBox olarak belirliyoruz ve içerisine "p" olarak ekliyoruz. Buradaki "p" Controller'da string olarak tanımladığımız p değişkenidir.<br>
+Bir tane buton ekliyoruz ve type türüne submit olarak belirliyoruz. Value değeri butonda gözükecek olan isimdir.<br><br>
+
+![image](https://github.com/user-attachments/assets/9fb80b20-e25c-4df2-bfe9-006431ebb419)
+<br>
+
+Burada herhangi bir müşterinin ismini aradığımız zaman bize herhangi bir sonuç döndürmeyecektir. Bunun için tekrardan MusteriController'a gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/05e61690-82c0-45cd-a0bd-b50e43fa256c)
+<br>
+Burada var degerler olarak tanımladığımız LINQ sorgusundan sonra bir tane if şartı yazıyoruz. Bu şart, eğer gireceğimiz değer boş olmama durumunu kontrol etmektedir.<br>
+Eğer arama çubuğuna yazacağımız değer boş olmazsa burada bir tane Where şartı yazıyoruz. Buradaki şart MUSTERIAD sütununda yer alan isimler, arama çubuğuna yazdığımız değeri içeriyorsa işlemi gerçekleştireceği anlamına gelmektedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/9d84342c-e4c9-4d0d-87f7-d2731b18d0c1)
+<br>
+EMEL yazdığımız zaman EMEL ismindeki müşterileri getirecektir. Sadece E yazarsak içerisinde E harfi geçen müşterileri getirecektir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 49 - Datatable Jquery Eklentisi (Paging & Search)
+
+Burada bir tane DataTable ekleyeceğiz. Bu eklenti sayesinde arama panelini veya sayfalama işlemini uzun uzun yapmak yerine tamamını tek bir eklenti üzerinden çok kolay bir şekilde yapabiliriz.<br>
+Bunun için katmanımıza sağ tıklayarak Manage NuGet Packages diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/606c99d5-ff41-4286-b456-2f278dbb570d)
+<br>
+Burada ekleyeceğimiz paketin ismi jquery.datatables olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/93dbef90-17b0-4240-b7b9-e54c95c8895e)
+<br>
+Paket kurulduktan sonra Content klasöründe yer alan DataTables klasörü oluşturuldu.<br><br>
+
+UrunController'dan Index sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d0cd58a7-edd0-4391-9180-0bf870e57d5d)
+<br>
+
+Burada ilk olarak oluşturduğumuz table etiketi içerisine bir tane id ekliyoruz ve ismini tbl1 olarak belirliyoruz.<br>
+Ardından oluşturduğumuz tr etiketleri içerisine thead etiketini ekleyerek tüm başlıkları tek bir çatı altında topluyoruz.<br>
+
+![image](https://github.com/user-attachments/assets/2cf72388-e1f1-4bc0-b884-c10aa9a5ff2f)
+<br>
+Buradaki kodları en alta yazıyoruz.<br>
+❗ Oluşturulan DataTables klasörü içerisinde yer alan css klasörüne gidiyoruz ve seçeceğimiz dosya ismi dataTables.bootstrap4.css olacaktır. Ekleyeceğimiz kod satırı aşağıda yer verilmiştir.<br><br>
+
+<link href="~/Content/DataTables/css/dataTables.bootstrap4.css" rel="stylesheet" /> <br><br>
+
+❗ Bir diğer ekleyeceğimiz script dosyası aşağıda yer verilmiştir, https://datatables.net/ sitesinden JS dosyasını ekleyebilirsiniz.<br><br>
+
+<script type="text/javascript" src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script> <br><br>
+
+![image](https://github.com/user-attachments/assets/6a6ffd6d-906c-48bd-90ff-f3010f939775)
+<br>
+Burada en alta bir tane script oluşturup table etiketinde verdiğimiz id değeri olan tbl1'i buraya ekliyoruz ve tablo oluşturmak için DataTable komutunu ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/02584a52-e64c-469c-9179-5b78916495d9)
+<br>
+DataTable görünümü bu şekildedir. Sol üst köşede yer alan entries per page kısmına gelip her bir sayfada kaç tane eleman sayısını gösterecektir. Burada başlangıçta 10 tane gösterdikten sonra yeni bir sayfaya gidecektir. Altında da hemen bir arama çubuğu bulunmaktadır. Arama çubuğunda herhangi bir harfe bastığımızda ilgili veriyi gösterecektir.<br><br>
+
+<hr>
+
+# 🖥️ Mvc Ders 50 - Final
+
+Bu eğitim bana gerçekten çok şey kattı. Daha önceden C# ve SQL bilgilerim sayesinde MVC'nin temel kavramından başlayarak nasıl bir Controller, View oluşturulacağını, nasıl bir proje hazırlanacağını öğrenerek bilgi birikimimi daha da arttırmış oldum. Eğitim boyunca vermiş olduğu bilgilerle pekiştirmemi sağladığı için Sayın Murat Yücedağ'a çok teşekkür ederim.
