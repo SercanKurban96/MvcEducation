@@ -1429,3 +1429,4 @@ DataTable görünümü bu şekildedir. Sol üst köşede yer alan entries per pa
 
 # 🖥️ Mvc Ders 50 - Final
 
+Bu eğitim bana gerçekten çok şey kattı. Daha önceden C# ve SQL bilgilerim sayesinde MVC'nin temel kavramından başlayarak nasıl bir Controller, View oluşturulacağını, nasıl bir proje hazırlanacağını öğrenerek bilgi birikimimi daha da arttırmış oldum. Eğitim boyunca vermiş olduğu bilgilerle pekiştirmemi sağladığı için Sayın Murat Yücedağ'a çok teşekkür ederim.
