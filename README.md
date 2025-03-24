@@ -1400,6 +1400,30 @@ Paket kurulduktan sonra Content klasöründe yer alan DataTables klasörü oluş
 
 UrunController'dan Index sayfasına gidiyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/d0cd58a7-edd0-4391-9180-0bf870e57d5d)
+<br>
+
 Burada ilk olarak oluşturduğumuz table etiketi içerisine bir tane id ekliyoruz ve ismini tbl1 olarak belirliyoruz.<br>
 Ardından oluşturduğumuz tr etiketleri içerisine thead etiketini ekleyerek tüm başlıkları tek bir çatı altında topluyoruz.<br>
-❗ 
+
+![image](https://github.com/user-attachments/assets/2cf72388-e1f1-4bc0-b884-c10aa9a5ff2f)
+<br>
+Buradaki kodları en alta yazıyoruz.<br>
+❗ Oluşturulan DataTables klasörü içerisinde yer alan css klasörüne gidiyoruz ve seçeceğimiz dosya ismi dataTables.bootstrap4.css olacaktır. Ekleyeceğimiz kod satırı aşağıda yer verilmiştir.<br><br>
+
+<link href="~/Content/DataTables/css/dataTables.bootstrap4.css" rel="stylesheet" /> <br><br>
+
+❗ Bir diğer ekleyeceğimiz script dosyası aşağıda yer verilmiştir, https://datatables.net/ sitesinden JS dosyasını ekleyebilirsiniz.<br><br>
+
+<script type="text/javascript" src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script> <br><br>
+
+![image](https://github.com/user-attachments/assets/6a6ffd6d-906c-48bd-90ff-f3010f939775)
+<br>
+Burada en alta bir tane script oluşturup table etiketinde verdiğimiz id değeri olan tbl1'i buraya ekliyoruz ve tablo oluşturmak için DataTable komutunu ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/02584a52-e64c-469c-9179-5b78916495d9)
+<br>
+DataTable görünümü bu şekildedir. Sol üst köşede yer alan entries per page kısmına gelip her bir sayfada kaç tane eleman sayısını gösterecektir. Burada başlangıçta 10 tane gösterdikten sonra yeni bir sayfaya gidecektir. Altında da hemen bir arama çubuğu bulunmaktadır.<br><br>
+
+<hr>
+
